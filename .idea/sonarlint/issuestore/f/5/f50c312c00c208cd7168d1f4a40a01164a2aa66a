@@ -1,0 +1,8 @@
+
+~squid:S1450"`Remove the "button_excercises" field and declare it as a local variable in the relevant methods.(·ÿŸ÷8Ò¢‰Äõ-
+{squid:S00116"\Rename this field "button_excercises" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÿŸ÷8Ò¢‰Äõ-
+csquid:UselessImportCheck"8Remove this unused import 'androidx.annotation.NonNull'.(ˆÛúÜ8Åôû‘ô-
+esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±
+€squid:S1450"]Remove the "button_profile" field and declare it as a local variable in the relevant methods.(Ö›öŸşÿÿÿÿ8ÿÙû ô-
+Ysquid:UselessImportCheck".Remove this unused import 'android.view.Menu'.(£¯Ò…8Åôû‘ô-
+}squid:S00116"YRename this field "button_profile" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö›öŸşÿÿÿÿ8•õà ô-

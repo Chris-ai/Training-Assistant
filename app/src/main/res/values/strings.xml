@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Training Assistant</string>
+
+    <!-- MAIN -->
+    <string name="profile">Profil</string>
+    <string name="calendar">Kalendarz</string>
+    <string name="training">Mój Trening</string>
+    <string name="excercises">Ćwiczenia</string>
+    <string name="health">Trening biegowy</string>
+    <string name="about">Ustawienia</string>
+
+
+    <!-- HEADERS -->
+    <string name="top_text">ORGANIZER TRENINGOWY</string>
+    <string name="profile_text">Imię i nazwisko</string>
+
+    <!-- PROFILE-->
+    <string name="how_many_trainings">Ilość treningów</string>
+    <string name="training_counts">0</string>
+    <string name="Male">Mężczyzna</string>
+    <string name="Female">Kobieta</string>
+    <string name="age">Wiek:</string>
+    <string name="how_many">0</string>
+    <string name="weight">Waga(kg):</string>
+    <string name="how_many_kg">0</string>
+    <string name="height">Wzrost(cm):</string>
+    <string name="how_many_cm">0</string>
+    <string name="BMI_text">BMI:</string>
+    <string name="BMI">0</string>
+    <string name="button_edit">Edytuj</string>
+    <string name="choose_gender">Płeć:</string>
+    <string name="gender">none</string>
+
+    <!-- EDIT PROFILE -->
+    <string name="Edit_name">Imię</string>
+    <string name="Edit_surname">Nazwisko</string>
+    <string name="Edit_weight">Waga</string>
+    <string name="Edit_height">Wzrost</string>
+    <string name="Edit_age">Wiek</string>
+    <string name="button_save">Zapisz</string>
+
+
+    <!-- EXCERCISES-->>
+    <string name="ABS">BRZUCH</string>
+    <string name="back">Plecy</string>
+    <string name="legs">nogi</string>
+    <string name="shoulders">barki</string>
+    <string name="chest">klatka</string>
+    <string name="arms">Ręce</string>
+</resources>

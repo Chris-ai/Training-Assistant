@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="text_top_size">20sp</dimen>
+    <dimen name="margin_row">10dp</dimen>
+    <dimen name="margin_beetween">8dp</dimen>
+    <dimen name="size">50dp</dimen>
+    <dimen name="image_text_size">16sp</dimen>
+    <dimen name="corner">10dp</dimen>
+    <dimen name="profile_icon_size">120dp</dimen>
+    <dimen name="lindear_under_background">215dp</dimen>
+    <dimen name="kmdimen">30dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="text_excercises">35sp</dimen>
+</resources>

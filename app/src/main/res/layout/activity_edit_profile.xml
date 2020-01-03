@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfileActivity"
+    android:layout_marginTop="@dimen/padding">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/Edit_name"
+            android:padding="@dimen/corner"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/image_text_size" />
+
+        <EditText
+            android:id="@+id/edit_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/Edit_surname"
+            android:padding="@dimen/corner"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/image_text_size" />
+
+        <EditText
+            android:id="@+id/edit_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/Edit_age"
+            android:inputType="number"
+            android:padding="@dimen/corner"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/image_text_size" />
+
+        <EditText
+            android:id="@+id/edit_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/Edit_weight"
+            android:inputType="number"
+            android:padding="@dimen/corner"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/image_text_size" />
+
+        <EditText
+            android:id="@+id/edit_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/Edit_height"
+            android:inputType="number"
+            android:padding="@dimen/corner"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:textSize="@dimen/image_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkBoxMale"
+                android:layout_width="wrap_content"
+                android:text="@string/Male"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/checkBoxFemale"
+                android:layout_width="wrap_content"
+                android:text="@string/Female"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size"
+        android:textSize="@dimen/image_text_size"
+        android:text="@string/button_save"/>
+
+</LinearLayout>

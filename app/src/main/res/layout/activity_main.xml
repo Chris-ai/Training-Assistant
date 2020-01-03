@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <!-- Top background -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/back">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/top_text"
+                        android:layout_gravity="center"
+                        android:textColor="#ffff"
+                        android:textSize="@dimen/text_top_size"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+                <!-- Whole buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/lindear_under_background"
+                    android:layout_marginStart="@dimen/margin_row"
+                    android:layout_marginEnd="@dimen/margin_row">
+
+                    <!-- Row 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_row">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="@dimen/margin_beetween"
+                            app:cardBackgroundColor="#eeeeee"
+                            app:cardCornerRadius="@dimen/corner">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageProfile"
+                                    android:layout_width="@dimen/size"
+                                    android:layout_height="@dimen/size"
+                                    android:src="@drawable/profile"
+                                    android:layout_centerInParent="true"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/profile"
+                                    android:textSize="@dimen/image_text_size"
+                                    android:layout_below="@id/imageProfile"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_row"
+                                    android:layout_marginBottom="@dimen/margin_row"
+                                    android:textStyle="bold"
+                                    />
+
+                                <Button
+                                    android:id="@+id/ProfileButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="@dimen/margin_beetween"
+                            app:cardBackgroundColor="#eeeeee"
+                            app:cardCornerRadius="@dimen/corner">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageCalendar"
+                                    android:layout_width="@dimen/size"
+                                    android:layout_height="@dimen/size"
+                                    android:src="@drawable/calendar"
+                                    android:layout_centerInParent="true"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/calendar"
+                                    android:textSize="@dimen/image_text_size"
+                                    android:layout_below="@id/imageCalendar"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_row"
+                                    android:layout_marginBottom="@dimen/margin_row"
+                                    android:textStyle="bold"
+                                    />
+
+                                <Button
+                                    android:id="@+id/CalendarButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    />
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Row 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_row">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="@dimen/margin_beetween"
+                            app:cardBackgroundColor="#eeeeee"
+                            app:cardCornerRadius="@dimen/corner">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageTraining"
+                                    android:layout_width="@dimen/size"
+                                    android:layout_height="@dimen/size"
+                                    android:src="@drawable/training"
+                                    android:layout_centerInParent="true"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/training"
+                                    android:textSize="@dimen/image_text_size"
+                                    android:layout_below="@id/imageTraining"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_row"
+                                    android:layout_marginBottom="@dimen/margin_row"
+                                    android:textStyle="bold"
+                                    />
+
+                                <Button
+                                    android:id="@+id/TrainingButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="@dimen/margin_beetween"
+                            app:cardBackgroundColor="#eeeeee"
+                            app:cardCornerRadius="@dimen/corner">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageExcercises"
+                                    android:layout_width="@dimen/size"
+                                    android:layout_height="@dimen/size"
+                                    android:src="@drawable/excercises"
+                                    android:layout_centerInParent="true"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/excercises"
+                                    android:textSize="@dimen/image_text_size"
+                                    android:layout_below="@id/imageExcercises"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_row"
+                                    android:layout_marginBottom="@dimen/margin_row"
+                                    android:textStyle="bold"
+                                    />
+
+                                <Button
+                                    android:id="@+id/ExcercisesButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Row 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_row">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="@dimen/margin_beetween"
+                            app:cardBackgroundColor="#eeeeee"
+                            app:cardCornerRadius="@dimen/corner">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageHealth"
+                                    android:layout_width="@dimen/size"
+                                    android:layout_height="@dimen/size"
+                                    android:src="@drawable/health"
+                                    android:layout_centerInParent="true"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/health"
+                                    android:textSize="@dimen/image_text_size"
+                                    android:layout_below="@id/imageHealth"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_row"
+                                    android:layout_marginBottom="@dimen/margin_row"
+                                    android:textStyle="bold"
+                                    />
+
+
+                                <Button
+                                    android:id="@+id/HealthButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginEnd="@dimen/margin_beetween"
+                            app:cardBackgroundColor="#eeeeee"
+                            app:cardCornerRadius="@dimen/corner">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ImageAbout"
+                                    android:layout_width="@dimen/size"
+                                    android:layout_height="@dimen/size"
+                                    android:src="@drawable/about"
+                                    android:layout_centerInParent="true"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/about"
+                                    android:textSize="@dimen/image_text_size"
+                                    android:layout_below="@id/ImageAbout"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/margin_row"
+                                    android:layout_marginBottom="@dimen/margin_row"
+                                    android:textStyle="bold"
+                                    />
+
+                                <Button
+                                    android:id="@+id/AboutButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

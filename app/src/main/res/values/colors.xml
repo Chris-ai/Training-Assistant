@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F55151</color>
+    <color name="colorPrimaryDark">#FF0202</color>
+    <color name="textColor">@android:color/black</color>
+    <color name="profile_cardview_color">#eeeeee</color>
+    <color name="excercises_cardview_color">#b0bec5</color>
+</resources>
