@@ -1,1 +1,1 @@
-# Training-Assistant
+# Training Assistant
