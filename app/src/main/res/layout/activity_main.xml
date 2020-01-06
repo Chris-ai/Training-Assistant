@@ -26,18 +26,18 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:gravity="center"
                     android:background="@drawable/back">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/top_text"
                         android:layout_gravity="center"
+                        android:text="@string/top_text"
                         android:textColor="#ffff"
                         android:textSize="@dimen/text_top_size"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -65,7 +65,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="#eeeeee"
+                            app:cardBackgroundColor="@color/custom_cardview_background"
                             app:cardCornerRadius="@dimen/corner">
 
                             <RelativeLayout
@@ -109,7 +109,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="#eeeeee"
+                            app:cardBackgroundColor="@color/custom_cardview_background"
                             app:cardCornerRadius="@dimen/corner">
 
                             <RelativeLayout
@@ -162,7 +162,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="#eeeeee"
+                            app:cardBackgroundColor="@color/custom_cardview_background"
                             app:cardCornerRadius="@dimen/corner">
 
                             <RelativeLayout
@@ -205,7 +205,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="#eeeeee"
+                            app:cardBackgroundColor="@color/custom_cardview_background"
                             app:cardCornerRadius="@dimen/corner">
 
                             <RelativeLayout
@@ -257,7 +257,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="#eeeeee"
+                            app:cardBackgroundColor="@color/custom_cardview_background"
                             app:cardCornerRadius="@dimen/corner">
 
                             <RelativeLayout
@@ -300,7 +300,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="#eeeeee"
+                            app:cardBackgroundColor="@color/custom_cardview_background"
                             app:cardCornerRadius="@dimen/corner">
 
                             <RelativeLayout

@@ -1,7 +1,6 @@
 package com.example.trainingassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class ExcercisesActivity extends AppCompatActivity {

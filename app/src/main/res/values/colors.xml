@@ -3,6 +3,7 @@
     <color name="colorPrimary">#F55151</color>
     <color name="colorPrimaryDark">#FF0202</color>
     <color name="textColor">@android:color/black</color>
-    <color name="profile_cardview_color">#eeeeee</color>
-    <color name="excercises_cardview_color">#b0bec5</color>
+    <color name="light_dark">#78909c</color>
+    <color name="floating_button">#1e88e5</color>
+    <color name="custom_cardview_background">#ffffff</color>
 </resources>

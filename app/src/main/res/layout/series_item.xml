@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/series_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding"
+        android:text="1"
+        android:textSize="@dimen/text_top_size" />
+
+    <EditText
+        android:id="@+id/obciazenie_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/padding"
+        android:text="@string/kgs"/>
+
+    <EditText
+        android:id="@+id/powtorzenia_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/padding"
+        android:text="@string/reps"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

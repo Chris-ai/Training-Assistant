@@ -9,7 +9,13 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".AddNewTraining"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".RunningActivity" />
+        <activity android:name=".StartTrainingActivity" />
+        <activity android:name=".ExcercisesDetailsActivity" />
+        <activity android:name=".MyTrainingActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ExcercisesActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".ProfileActivity" />

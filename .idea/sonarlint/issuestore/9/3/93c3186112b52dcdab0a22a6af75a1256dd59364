@@ -1,9 +1,8 @@
 
+zsquid:S00116"VRename this field "edit_button" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÎ£òÿÿÿÿÿ8‘ñæ¡ô-
 jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ
-esquid:S22594"BA "NullPointerException" could be thrown; "data" is nullable here.(øøœùÿÿÿÿ8¾’îÉõ-
+_squid:UselessImportCheck"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8òˆ²Àõ-
 }squid:S1450"ZRemove the "edit_button" field and declare it as a local variable in the relevant methods.(øÎ£òÿÿÿÿÿ8¤©§Éõ-
+esquid:S22594"BA "NullPointerException" could be thrown; "data" is nullable here.(øøœùÿÿÿÿ8¾’îÉõ-
 ^squid:UselessImportCheck
 "4Remove this unused import 'android.widget.CheckBox'.(Ùáb8žÄ›Äõ-
-_squid:UselessImportCheck"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8òˆ²Àõ-
-zsquid:S00116"VRename this field "edit_button" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÎ£òÿÿÿÿÿ8‘ñæ¡ô-
-psquid:S00117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…¸Ãè8ãÖ»Éõ-

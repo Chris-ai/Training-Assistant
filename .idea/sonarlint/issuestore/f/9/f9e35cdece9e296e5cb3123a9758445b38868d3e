@@ -1,9 +1,9 @@
 
-usquid:S00117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÃèÈøÿÿÿÿ8œÎ‡Éõ-
-psquid:S00117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óûõâ8ä‚Éõ-
 psquid:S00117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã í—8‹ò“Éõ-
-usquid:S00117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’€Ìüÿÿÿÿ8Ğ‰”Àõ-
-usquid:S00117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûáÇ‹ùÿÿÿÿ8‹ò“Éõ-
-csquid:UselessImportCheck"3Remove this unused import 'android.text.TextUtils'.(û˜½Õøÿÿÿÿ8¼˜ıÈõ-
 jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(’„¸°ÿÿÿÿÿ
 ]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8•Ìò¿õ-
+usquid:S00117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’€Ìüÿÿÿÿ8Ğ‰”Àõ-
+csquid:UselessImportCheck"3Remove this unused import 'android.text.TextUtils'.(û˜½Õøÿÿÿÿ8¼˜ıÈõ-
+usquid:S00117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÃèÈøÿÿÿÿ8œÎ‡Éõ-
+usquid:S00117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûáÇ‹ùÿÿÿÿ8‹ò“Éõ-
+psquid:S00117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óûõâ8ä‚Éõ-

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNewTraining">
+
+
+    <EditText
+        android:id="@+id/edit_name_training"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/training_name"
+        android:layout_marginStart="@dimen/padding"
+        android:layout_marginEnd="@dimen/padding"
+        android:layout_marginTop="@dimen/excercise_list_start" />
+
+    <Button
+        android:id="@+id/button_add_training"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginEnd="@dimen/padding"
+        android:text="@string/button_save"/>
+</LinearLayout>

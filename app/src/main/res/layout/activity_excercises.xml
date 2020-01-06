@@ -22,18 +22,18 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:layout_marginTop="@dimen/small_padding">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/corner"
+                        app:cardCornerRadius="@dimen/small_corner"
                         android:layout_marginLeft="@dimen/padding"
                         android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/profile_cardview_color">
+                        app:cardBackgroundColor="@color/custom_cardview_background">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -76,11 +76,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/corner"
+                        app:cardCornerRadius="@dimen/small_corner"
                         android:layout_marginLeft="@dimen/padding"
                         android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/profile_cardview_color">
+                        app:cardBackgroundColor="@color/custom_cardview_background">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -123,11 +123,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/corner"
+                        app:cardCornerRadius="@dimen/small_corner"
                         android:layout_marginLeft="@dimen/padding"
                         android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/profile_cardview_color">
+                        app:cardBackgroundColor="@color/custom_cardview_background">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -170,11 +170,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/corner"
+                        app:cardCornerRadius="@dimen/small_corner"
                         android:layout_marginLeft="@dimen/padding"
                         android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/profile_cardview_color">
+                        app:cardBackgroundColor="@color/custom_cardview_background">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -217,11 +217,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/corner"
+                        app:cardCornerRadius="@dimen/small_corner"
                         android:layout_marginLeft="@dimen/padding"
                         android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/profile_cardview_color">
+                        app:cardBackgroundColor="@color/custom_cardview_background">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -263,11 +263,11 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/corner"
+                        app:cardCornerRadius="@dimen/small_corner"
                         android:layout_marginLeft="@dimen/padding"
                         android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/profile_cardview_color">
+                        app:cardBackgroundColor="@color/custom_cardview_background">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -308,6 +308,17 @@
                     </androidx.cardview.widget.CardView> <!-- Legs -->
 
 
+                    <TextView
+                        android:layout_marginTop="@dimen/lindear_under_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/small_padding"
+                        android:layout_marginEnd="@dimen/small_padding"
+                        android:textSize="@dimen/warning_size"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/warning_excercise"
+                        />
 
                 </LinearLayout>
 
@@ -321,5 +332,6 @@
 
 
     </ScrollView>
+
 
 </LinearLayout>

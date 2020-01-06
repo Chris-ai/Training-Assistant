@@ -20,6 +20,7 @@ public class EditProfileActivity extends AppCompatActivity {
     public static final String EXTRA_EDIT_WEIGHT = "EDIT_WEIGHT";
     public static final String EXTRA_EDIT_HEIGHT = "EDIT_HEIGHT";
     public static final String EXTRA_EDIT_GENDER = "EDIT_GENDER";
+    public static final String EXTRA_EDIT_SURNAME = "EDIT_SURNAME";
 
     private EditText editTextName;
     private EditText editTextSurname;
@@ -39,24 +40,27 @@ public class EditProfileActivity extends AppCompatActivity {
         editTextAge = findViewById(R.id.edit_age);
         editTextHeight = findViewById(R.id.edit_height);
         editTextWeight = findViewById(R.id.edit_weight);
-        male = findViewById(R.id.checkBoxMale);
-        female = findViewById(R.id.checkBoxFemale);
+        male = (CheckBox) findViewById(R.id.checkBoxMale);
+        female = (CheckBox) findViewById(R.id.checkBoxFemale);
 
        final Button button_save = findViewById(R.id.button_save);
+
 
         button_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 if(editTextName.getText().toString().isEmpty() ||
                         editTextSurname.getText().toString().isEmpty() ||
                         editTextAge.getText().toString().isEmpty() ||
                         editTextWeight.getText().toString().isEmpty() ||
                         editTextHeight.getText().toString().isEmpty() ||
-                        (!male.isChecked() && !female.isChecked())
+                        (!male.isChecked() && !female.isChecked()) ||
+                        (male.isChecked() && female.isChecked())
                 )
                 {
-                    Toast.makeText(EditProfileActivity.this, "Uzupełnij dane pls",Toast.LENGTH_LONG).show();
+                    Toast.makeText(EditProfileActivity.this, "Nie uzupełniłeś wszystkich danych",Toast.LENGTH_LONG).show();
                 } else {
                     Intent returnIntent = new Intent();
                     StringBuilder profile_name = new StringBuilder();
@@ -64,29 +68,30 @@ public class EditProfileActivity extends AppCompatActivity {
                     String name = editTextName.getText().toString();
                     String surname = editTextSurname.getText().toString();
 
-                    profile_name.append(name).append(" ").append(surname);
                     returnIntent.putExtra(EXTRA_EDIT_NAME, name);
+                    returnIntent.putExtra(EXTRA_EDIT_SURNAME, surname);
 
-                    int Age = Integer.parseInt(editTextAge.getText().toString());
-                    returnIntent.putExtra(EXTRA_EDIT_AGE, Age);
+                    int age = Integer.parseInt(editTextAge.getText().toString());
+                    returnIntent.putExtra(EXTRA_EDIT_AGE, age);
 
-                    int Weight = Integer.parseInt(editTextWeight.getText().toString());
-                    returnIntent.putExtra(EXTRA_EDIT_WEIGHT, Weight);
+                    int weight = Integer.parseInt(editTextWeight.getText().toString());
+                    returnIntent.putExtra(EXTRA_EDIT_WEIGHT, weight);
 
-                    int Height = Integer.parseInt(editTextHeight.getText().toString());
-                    returnIntent.putExtra(EXTRA_EDIT_HEIGHT, Height);
+                    int height = Integer.parseInt(editTextHeight.getText().toString());
+                    returnIntent.putExtra(EXTRA_EDIT_HEIGHT, height);
 
-                    if (male.isChecked()) {
-                        String gender = "Mężczyzna";
-                        returnIntent.putExtra(EXTRA_EDIT_GENDER, gender);
+                    String gender = "Mężczyzna";
+                    String femalegender ="kobieta";
+
+                    if(male.isChecked()){
+                        returnIntent.putExtra(EXTRA_EDIT_GENDER,name);
                     } else {
-                        String gender = "Kobieta";
-                        returnIntent.putExtra(EXTRA_EDIT_GENDER, gender);
+                        returnIntent.putExtra(EXTRA_EDIT_GENDER,femalegender);
                     }
-
                     setResult(RESULT_OK, returnIntent);
-                    finish();
                 }
+
+                finish();
             }
 
 

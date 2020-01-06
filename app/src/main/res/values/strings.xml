@@ -12,7 +12,8 @@
 
     <!-- HEADERS -->
     <string name="top_text">ORGANIZER TRENINGOWY</string>
-    <string name="profile_text">Imię i nazwisko</string>
+    <string name="profile_text">Imię i</string>
+    <string name="profile_text2">nazwisko</string>
 
     <!-- PROFILE-->
     <string name="how_many_trainings">Ilość treningów</string>
@@ -40,11 +41,27 @@
     <string name="button_save">Zapisz</string>
 
 
-    <!-- EXCERCISES-->>
+    <!-- EXCERCISES-->
     <string name="ABS">BRZUCH</string>
     <string name="back">Plecy</string>
     <string name="legs">nogi</string>
     <string name="shoulders">barki</string>
     <string name="chest">klatka</string>
     <string name="arms">Ręce</string>
+    <string name="warning_excercise">Uwaga, aplikacja jest jedynie organizerem, jeśli masz wątpliwości czy poprawnie wykonujesz ćwiczenie, spytaj odpowiednio wykwalifikowanej osoby</string>
+
+
+    <!-- TRAINING LIST ITEM -->
+    <string name="training_name">Nazwa treningu</string>
+    <string name="how_many_repeats">Ilość ćwiczeń:</string>
+    <string name="start">Start</string>
+    <string name="how_many_series">Liczba serii:</string>
+    <string name="excercise_name">Nazwa ćwiczenia</string>
+    <string name="how_many_reps">Serie:</string>
+    <string name="how_many_reps_number">x</string>
+    <string name="finish_training">Zakończ</string>
+    <string name="comment">Notatki</string>
+    <string name="kgs">Obciążenie</string>
+    <string name="sets">Seria</string>
+    <string name="reps">Powtórzenia</string>
 </resources>
