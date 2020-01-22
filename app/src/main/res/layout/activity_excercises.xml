@@ -17,23 +17,23 @@
 
             <RelativeLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="595dp">
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_marginTop="@dimen/small_padding">
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/small_corner"
+                        android:layout_height="@dimen/InputTextLayout"
                         android:layout_marginLeft="@dimen/padding"
-                        android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/custom_cardview_background">
+                        android:layout_marginRight="@dimen/padding"
+                        app:cardBackgroundColor="@color/custom_cardview_background"
+                        app:cardCornerRadius="@dimen/small_corner">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -57,30 +57,30 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/small_padding"
                                     android:text="@string/shoulders"
-                                    android:textAllCaps="true"
-                                    android:textSize="@dimen/text_excercises"
                                     android:textColor="@color/textColor"
-                                    android:layout_marginStart="@dimen/small_padding"/>
+                                    android:textSize="@dimen/text_excercises" />
 
                             </LinearLayout>
-                            <Button
-                                android:id="@+id/shoulders_button"
+
+                            <Spinner
+                                android:id="@+id/shoulders_spinner"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@android:color/transparent"/>
+                                android:layout_height="match_parent" />
+
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView> <!-- Shoulders -->
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/small_corner"
+                        android:layout_height="@dimen/InputTextLayout"
                         android:layout_marginLeft="@dimen/padding"
-                        android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/custom_cardview_background">
+                        android:layout_marginRight="@dimen/padding"
+                        app:cardBackgroundColor="@color/custom_cardview_background"
+                        app:cardCornerRadius="@dimen/small_corner">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -104,30 +104,29 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/small_padding"
                                     android:text="@string/back"
-                                    android:textAllCaps="true"
-                                    android:textSize="@dimen/text_excercises"
                                     android:textColor="@color/textColor"
-                                    android:layout_marginStart="@dimen/small_padding"/>
-
+                                    android:textSize="@dimen/text_excercises" />
                             </LinearLayout>
-                            <Button
-                                android:id="@+id/back_button"
+
+                            <Spinner
+                                android:id="@+id/back_spinner"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@android:color/transparent"/>
+                                android:gravity="top" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView> <!-- Back -->
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/small_corner"
+                        android:layout_height="@dimen/InputTextLayout"
                         android:layout_marginLeft="@dimen/padding"
-                        android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/custom_cardview_background">
+                        android:layout_marginRight="@dimen/padding"
+                        app:cardBackgroundColor="@color/custom_cardview_background"
+                        app:cardCornerRadius="@dimen/small_corner">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -151,30 +150,30 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/small_padding"
                                     android:text="@string/chest"
-                                    android:textAllCaps="true"
-                                    android:textSize="@dimen/text_excercises"
                                     android:textColor="@color/textColor"
-                                    android:layout_marginStart="@dimen/small_padding"/>
+                                    android:textSize="@dimen/text_excercises" />
 
                             </LinearLayout>
-                            <Button
-                                android:id="@+id/chest_button"
+
+                            <Spinner
+                                android:id="@+id/chest_spinner"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@android:color/transparent"/>
+                                android:gravity="top" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView> <!-- Chest -->
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/small_corner"
+                        android:layout_height="@dimen/InputTextLayout"
                         android:layout_marginLeft="@dimen/padding"
-                        android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/custom_cardview_background">
+                        android:layout_marginRight="@dimen/padding"
+                        app:cardBackgroundColor="@color/custom_cardview_background"
+                        app:cardCornerRadius="@dimen/small_corner">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -198,30 +197,30 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/small_padding"
                                     android:text="@string/arms"
-                                    android:textAllCaps="true"
-                                    android:textSize="@dimen/text_excercises"
                                     android:textColor="@color/textColor"
-                                    android:layout_marginStart="@dimen/small_padding"/>
+                                    android:textSize="@dimen/text_excercises" />
 
                             </LinearLayout>
-                            <Button
-                                android:id="@+id/arm_button"
+
+                            <Spinner
+                                android:id="@+id/arms_spinner"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@android:color/transparent"/>
+                                android:gravity="top" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView> <!-- Arms -->
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/small_corner"
+                        android:layout_height="@dimen/InputTextLayout"
                         android:layout_marginLeft="@dimen/padding"
-                        android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/custom_cardview_background">
+                        android:layout_marginRight="@dimen/padding"
+                        app:cardBackgroundColor="@color/custom_cardview_background"
+                        app:cardCornerRadius="@dimen/small_corner">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -245,29 +244,30 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/small_padding"
                                     android:text="@string/ABS"
-                                    android:textSize="@dimen/text_excercises"
                                     android:textColor="@color/textColor"
-                                    android:layout_marginStart="@dimen/small_padding"/>
+                                    android:textSize="@dimen/text_excercises" />
 
                             </LinearLayout>
-                                <Button
-                                    android:id="@+id/abs_button"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="@android:color/transparent"/>
+
+                            <Spinner
+                                android:id="@+id/abs_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="top"></Spinner>
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView> <!-- Abs -->
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:cardCornerRadius="@dimen/small_corner"
+                        android:layout_height="@dimen/InputTextLayout"
                         android:layout_marginLeft="@dimen/padding"
-                        android:layout_marginRight="@dimen/padding"
                         android:layout_marginTop="@dimen/padding"
-                        app:cardBackgroundColor="@color/custom_cardview_background">
+                        android:layout_marginRight="@dimen/padding"
+                        app:cardBackgroundColor="@color/custom_cardview_background"
+                        app:cardCornerRadius="@dimen/small_corner">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -291,37 +291,24 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/small_padding"
                                     android:text="@string/legs"
-                                    android:textAllCaps="true"
-                                    android:textSize="@dimen/text_excercises"
                                     android:textColor="@color/textColor"
-                                    android:layout_marginStart="@dimen/small_padding"/>
+                                    android:textSize="@dimen/text_excercises" />
 
                             </LinearLayout>
-                            <Button
-                                android:id="@+id/legs_button"
+
+                            <Spinner
+                                android:id="@+id/legs_spinner"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@android:color/transparent"/>
+                                android:gravity="top"></Spinner>
+
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView> <!-- Legs -->
 
-
-                    <TextView
-                        android:layout_marginTop="@dimen/lindear_under_background"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center"
-                        android:layout_marginStart="@dimen/small_padding"
-                        android:layout_marginEnd="@dimen/small_padding"
-                        android:textSize="@dimen/warning_size"
-                        android:textColor="@android:color/darker_gray"
-                        android:text="@string/warning_excercise"
-                        />
-
                 </LinearLayout>
-
 
 
             </RelativeLayout>

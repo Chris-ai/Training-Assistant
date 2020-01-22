@@ -42,11 +42,11 @@
 
 
     <!-- EXCERCISES-->
-    <string name="ABS">BRZUCH</string>
+    <string name="ABS">Brzuch</string>
     <string name="back">Plecy</string>
-    <string name="legs">nogi</string>
-    <string name="shoulders">barki</string>
-    <string name="chest">klatka</string>
+    <string name="legs">Nogi</string>
+    <string name="shoulders">Barki</string>
+    <string name="chest">Klatka</string>
     <string name="arms">Ręce</string>
     <string name="warning_excercise">Uwaga, aplikacja jest jedynie organizerem, jeśli masz wątpliwości czy poprawnie wykonujesz ćwiczenie, spytaj odpowiednio wykwalifikowanej osoby</string>
 
@@ -64,4 +64,7 @@
     <string name="kgs">Obciążenie</string>
     <string name="sets">Seria</string>
     <string name="reps">Powtórzenia</string>
+
+
+
 </resources>

@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EditProfileActivity"
-    android:layout_marginTop="@dimen/padding">
-
+    tools:context=".EditProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,32 +14,49 @@
         android:layout_marginLeft="@dimen/padding"
         android:layout_marginRight="@dimen/padding">
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/InputTextLayout"
+            android:layout_margin="@dimen/margin_beetween"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
         <EditText
             android:id="@+id/edit_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:fontFamily="sans-serif-light"
             android:hint="@string/Edit_name"
             android:padding="@dimen/corner"
             android:layout_marginBottom="@dimen/padding"
             android:layout_marginTop="@dimen/padding"
             android:textSize="@dimen/image_text_size" />
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/InputTextLayout"
+            android:layout_margin="@dimen/margin_beetween"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <EditText
             android:id="@+id/edit_surname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
+            android:layout_height="match_parent"
             android:hint="@string/Edit_surname"
             android:padding="@dimen/corner"
             android:layout_marginBottom="@dimen/padding"
             android:layout_marginTop="@dimen/padding"
             android:textSize="@dimen/image_text_size" />
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/InputTextLayout"
+            android:layout_margin="@dimen/margin_beetween"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <EditText
             android:id="@+id/edit_age"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:fontFamily="sans-serif-light"
             android:hint="@string/Edit_age"
             android:inputType="number"
@@ -49,11 +64,17 @@
             android:layout_marginBottom="@dimen/padding"
             android:layout_marginTop="@dimen/padding"
             android:textSize="@dimen/image_text_size" />
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/InputTextLayout"
+            android:layout_margin="@dimen/margin_beetween"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <EditText
             android:id="@+id/edit_weight"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:fontFamily="sans-serif-light"
             android:hint="@string/Edit_weight"
             android:inputType="number"
@@ -62,10 +83,17 @@
             android:layout_marginTop="@dimen/padding"
             android:textSize="@dimen/image_text_size" />
 
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/InputTextLayout"
+            android:layout_margin="@dimen/margin_beetween"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <EditText
             android:id="@+id/edit_height"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:fontFamily="sans-serif-light"
             android:hint="@string/Edit_height"
             android:inputType="number"
@@ -74,21 +102,25 @@
             android:layout_marginTop="@dimen/padding"
             android:textSize="@dimen/image_text_size" />
 
-        <LinearLayout
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <CheckBox
-                android:id="@+id/checkBoxMale"
-                android:layout_width="wrap_content"
-                android:text="@string/Male"
-                android:layout_height="wrap_content" />
 
-            <CheckBox
-                android:id="@+id/checkBoxFemale"
+            <RadioButton
+                android:id="@+id/RadioMale"
                 android:layout_width="wrap_content"
-                android:text="@string/Female"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:text="@string/Male" />
+
+            <RadioButton
+                android:id="@+id/RadioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Female" />
+        </RadioGroup>
 
     </LinearLayout>
 

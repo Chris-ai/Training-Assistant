@@ -83,9 +83,7 @@ public class ProfileActivity extends AppCompatActivity {
                 textViewHeight.setText(String.valueOf(height));
 
             String gender = data.getStringExtra(EditProfileActivity.EXTRA_EDIT_GENDER);
-            if(gender != null && gender.equals("")){
                 textViewGender.setText(gender);
-            }
 
             double bmi, heightinm;
             heightinm = height/100.0;

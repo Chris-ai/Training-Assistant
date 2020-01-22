@@ -20,7 +20,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/small_padding"
         android:layout_marginBottom="@dimen/small_padding"
-        android:src="@android:drawable/ic_input_add"
+        android:src="@drawable/ic_add_black_24dp"
         app:backgroundTint="@color/floating_button" />
 
 

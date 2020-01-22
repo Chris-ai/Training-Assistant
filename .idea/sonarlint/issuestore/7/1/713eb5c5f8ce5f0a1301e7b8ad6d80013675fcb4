@@ -1,2 +1,8 @@
 
-jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(âüŠšÿÿÿÿÿ
+ùsquid:S1192""ÕDefine a constant instead of duplicating this literal "Cwiczenie wykonujemy najlepiej z normalnÄ… szatangÄ…, kÅ‚adziemy jÄ… na plecach i w powolnym przysiadzie prÃ³bujemy unieÅ›Ä‡ ciÄ™Å¼ar caÅ‚ej sztangi" 7 times.(¦¥÷Àþÿÿÿÿ8½ùÞšü-
+`squid:UselessImportCheck"0Remove this unused import 'android.text.Layout'.(ÔŠ²±úÿÿÿÿ8Þˆ·”ü-
+psquid:S00117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û‚×Ø8½ùÞšü-
+‰squid:S1192""fDefine a constant instead of duplicating this literal "MiÄ™snie czworogÅ‚owe i dwugÅ‚owe uda" 7 times.(¦¥÷Àþÿÿÿÿ8½ùÞšü-
+hsquid:UselessImportCheck"8Remove this unused import 'android.widget.ArrayAdapter'.( €ŠÑÿÿÿÿÿ8èÜÕ“ü-
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(âüŠšÿÿÿÿÿ8Þç•¿÷-
+msquid:S1192""JDefine a constant instead of duplicating this literal "Przysiady" 7 times.(¦¥÷Àþÿÿÿÿ8½ùÞšü-

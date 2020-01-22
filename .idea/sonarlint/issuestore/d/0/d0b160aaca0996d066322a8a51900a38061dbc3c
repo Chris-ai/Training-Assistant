@@ -1,0 +1,7 @@
+
+Ÿsquid:S1186S"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¢­¡á8ˆÎ¤Ù÷-
+lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(§„š8Ş®·×÷-
+Qsquid:S1068?".Remove this unused "list_of_ex" private field.(§Ëû“üÿÿÿÿ8‚Ç“Ù÷-
+esquid:S22596"BA "NullPointerException" could be thrown; "data" is nullable here.(ºÍĞ³üÿÿÿÿ8Ù›ûÚ÷-
+]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8‚Ç“Ù÷-
+Tsquid:S1068>"1Remove this unused "training_name" private field.(Àì·æøÿÿÿÿ8Õ¡Ù÷-

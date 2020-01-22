@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
@@ -27,8 +29,9 @@ public class EditProfileActivity extends AppCompatActivity {
     private EditText editTextAge;
     private EditText editTextWeight;
     private EditText editTextHeight;
-    private CheckBox male;
-    private CheckBox female;
+
+    private RadioGroup radioGroup;
+    private RadioButton radioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +43,7 @@ public class EditProfileActivity extends AppCompatActivity {
         editTextAge = findViewById(R.id.edit_age);
         editTextHeight = findViewById(R.id.edit_height);
         editTextWeight = findViewById(R.id.edit_weight);
-        male = (CheckBox) findViewById(R.id.checkBoxMale);
-        female = (CheckBox) findViewById(R.id.checkBoxFemale);
+        radioGroup = findViewById(R.id.radio_group);
 
        final Button button_save = findViewById(R.id.button_save);
 
@@ -55,15 +57,12 @@ public class EditProfileActivity extends AppCompatActivity {
                         editTextSurname.getText().toString().isEmpty() ||
                         editTextAge.getText().toString().isEmpty() ||
                         editTextWeight.getText().toString().isEmpty() ||
-                        editTextHeight.getText().toString().isEmpty() ||
-                        (!male.isChecked() && !female.isChecked()) ||
-                        (male.isChecked() && female.isChecked())
+                        editTextHeight.getText().toString().isEmpty()
                 )
                 {
                     Toast.makeText(EditProfileActivity.this, "Nie uzupełniłeś wszystkich danych",Toast.LENGTH_LONG).show();
                 } else {
                     Intent returnIntent = new Intent();
-                    StringBuilder profile_name = new StringBuilder();
 
                     String name = editTextName.getText().toString();
                     String surname = editTextSurname.getText().toString();
@@ -79,16 +78,13 @@ public class EditProfileActivity extends AppCompatActivity {
 
                     int height = Integer.parseInt(editTextHeight.getText().toString());
                     returnIntent.putExtra(EXTRA_EDIT_HEIGHT, height);
-
-                    String gender = "Mężczyzna";
-                    String femalegender ="kobieta";
-
-                    if(male.isChecked()){
-                        returnIntent.putExtra(EXTRA_EDIT_GENDER,name);
-                    } else {
-                        returnIntent.putExtra(EXTRA_EDIT_GENDER,femalegender);
-                    }
                     setResult(RESULT_OK, returnIntent);
+
+                    int radioID = radioGroup.getCheckedRadioButtonId();
+                    radioButton = findViewById(radioID);
+
+                    String gender = radioButton.getText().toString();
+                    returnIntent.putExtra(EXTRA_EDIT_GENDER,gender);
                 }
 
                 finish();

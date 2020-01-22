@@ -38,16 +38,21 @@
     </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
 
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size"
+        android:layout_marginTop="@dimen/size"
+        android:layout_marginStart="@dimen/kmdimen"
+        android:layout_marginEnd="@dimen/kmdimen"
+        app:boxBackgroundColor="#eeeeee"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
    <EditText
        android:id="@+id/edit_text_training_start"
        android:layout_width="match_parent"
-       android:layout_height="@dimen/kmdimen"
-       android:text="@string/comment"
-       android:layout_marginTop="@dimen/size"
-       android:layout_marginStart="@dimen/kmdimen"
-       android:layout_marginEnd="@dimen/kmdimen"
-       android:background="@color/cardview_shadow_start_color"/>
-
+       android:layout_height="match_parent"
+       android:hint="@string/comment" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/start_training_item_name_ex"

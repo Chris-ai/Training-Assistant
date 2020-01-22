@@ -1,9 +1,9 @@
 
-psquid:S00117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã í—8‹ò“Éõ-
-jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(’„¸°ÿÿÿÿÿ
-]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8•Ìò¿õ-
-usquid:S00117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’€Ìüÿÿÿÿ8Ğ‰”Àõ-
-csquid:UselessImportCheck"3Remove this unused import 'android.text.TextUtils'.(û˜½Õøÿÿÿÿ8¼˜ıÈõ-
-usquid:S00117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÃèÈøÿÿÿÿ8œÎ‡Éõ-
-usquid:S00117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûáÇ‹ùÿÿÿÿ8‹ò“Éõ-
-psquid:S00117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óûõâ8ä‚Éõ-
+Osquid:S1481<"1Remove this unused "profile_name" local variable.(Óûõâ8½†ıŞ÷-
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(’„¸°ÿÿÿÿÿ8¯ÖÓÚ÷-
+]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8¯ÖÓÚ÷-
+csquid:UselessImportCheck"3Remove this unused import 'android.text.TextUtils'.(û˜½Õøÿÿÿÿ8¯ÖÓÚ÷-
+usquid:S00117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’€Ìüÿÿÿÿ8¯ÖÓÚ÷-
+psquid:S00117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óûõâ8ê•ãŞ÷-
+^squid:UselessImportCheck
+"4Remove this unused import 'android.widget.CheckBox'.(Ùáb8úÚÃú-

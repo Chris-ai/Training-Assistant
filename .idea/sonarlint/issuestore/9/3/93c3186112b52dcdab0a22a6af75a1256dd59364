@@ -1,8 +1,5 @@
 
-zsquid:S00116"VRename this field "edit_button" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÎ£òÿÿÿÿÿ8‘ñæ¡ô-
-jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ
-_squid:UselessImportCheck"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8òˆ²Àõ-
-}squid:S1450"ZRemove the "edit_button" field and declare it as a local variable in the relevant methods.(øÎ£òÿÿÿÿÿ8¤©§Éõ-
-esquid:S22594"BA "NullPointerException" could be thrown; "data" is nullable here.(øøœùÿÿÿÿ8¾’îÉõ-
-^squid:UselessImportCheck
-"4Remove this unused import 'android.widget.CheckBox'.(Ùáb8žÄ›Äõ-
+Qsquid:S1068".Remove this unused "BMI_button" private field.(ìÌÌýÿÿÿÿ8ÀÉ¥ç÷-
+Dsquid:S1659W"'Declare "heightinm" on a separate line.(ÓãÈL8¦ßß÷-
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ8æàüÚ÷-
+osquid:S3776:"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(¹Î¾8æàüÚ÷-

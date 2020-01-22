@@ -12,7 +12,8 @@
     <dimen name="lindear_under_background">215dp</dimen>
     <dimen name="kmdimen">30dp</dimen>
     <dimen name="small_padding">5dp</dimen>
-    <dimen name="text_excercises">35sp</dimen>
+    <dimen name="text_excercises">25sp</dimen>
     <dimen name="excercise_list_start">250dp</dimen>
     <dimen name="small_corner">3dp</dimen>
+    <dimen name="InputTextLayout">70dp</dimen>
 </resources>
