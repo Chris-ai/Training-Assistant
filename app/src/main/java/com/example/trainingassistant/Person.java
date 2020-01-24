@@ -2,6 +2,7 @@ package com.example.trainingassistant;
 public class Person {
 
 
+    private String surname;
     private String gender;
     private String name;
     private int Age;
@@ -11,8 +12,8 @@ public class Person {
     StringBuilder stringBuilder;
 
     public Person(String name, String surname, int Age, int Weight, int Height, String gender) {
-        stringBuilder = new StringBuilder().append(name).append(" ").append(surname);
-        this.name = stringBuilder.toString();
+        this.name = name;
+        this.surname = surname;
         this.Age = Age;
         this.Height = Height;
         this.Weight = Weight;
@@ -58,5 +59,13 @@ public class Person {
 
     public void setHeight(int height) {
         Height = height;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 }

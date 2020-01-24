@@ -11,21 +11,24 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Collections;
+import java.util.List;
+
 import static android.graphics.Color.GREEN;
 import static android.graphics.Color.RED;
 
 public class ProfileActivity extends AppCompatActivity {
 
     private Button edit_button;
-    private Button BMI_button;
     public static final int EDIT_PROFILE_REQUEST_CODE = 1;
+    private Person Person = new Person("Imię","Nazwisko",0,0,0,"płeć");
+    private List<Person> personList = Collections.singletonList(Person);
 
     private TextView textViewName;
     private TextView textViewAge;
     private TextView textViewWeight;
     private TextView textViewHeight;
     private TextView textViewGender;
-    private TextView BMI_counter;
     private TextView textViewSurname;
 
     @Override
@@ -42,7 +45,6 @@ public class ProfileActivity extends AppCompatActivity {
         textViewGender = findViewById(R.id.gender);
         textViewSurname = findViewById(R.id.surname);
 
-        BMI_counter = findViewById(R.id.profile_how_many_BMI);
 
         edit_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,47 +63,31 @@ public class ProfileActivity extends AppCompatActivity {
 
             assert data != null;
             String name = data.getStringExtra(EditProfileActivity.EXTRA_EDIT_NAME);
-            if(name != null && !name.equals("")){
+            if(name != null && !name.equals("")) {
                 textViewName.setText(name);
             }
 
             String surname = data.getStringExtra(EditProfileActivity.EXTRA_EDIT_SURNAME);
-            if(name != null && !name.equals("")){
+            if(surname != null && !surname.equals("")) {
                 textViewSurname.setText(surname);
             }
 
             int age = data.getIntExtra(EditProfileActivity.EXTRA_EDIT_AGE, 0);
-            if(age != 0)
-               textViewAge.setText(String.valueOf(age));
+            if(age != 0) {
+                textViewAge.setText(age);
+            }
 
             int weight = data.getIntExtra(EditProfileActivity.EXTRA_EDIT_WEIGHT, 0);
-            if(weight !=0)
-                textViewWeight.setText(String.valueOf(weight));
+            if(weight !=0) {
+                textViewWeight.setText(weight);
+            }
 
             int height = data.getIntExtra(EditProfileActivity.EXTRA_EDIT_HEIGHT, 0);
-            if(height != 0)
-                textViewHeight.setText(String.valueOf(height));
-
+            if(height != 0) {
+                textViewHeight.setText(height);
+            }
             String gender = data.getStringExtra(EditProfileActivity.EXTRA_EDIT_GENDER);
                 textViewGender.setText(gender);
-
-            double bmi, heightinm;
-            heightinm = height/100.0;
-
-            if(height!=0) {
-                bmi = weight/(heightinm*heightinm);
-                BMI_counter.setText(String.valueOf((int)bmi));
-
-               if(bmi < 18.5){
-                    BMI_counter.setTextColor(Color.BLUE);
-                } else if(bmi >=18.5 && bmi < 24.99){
-                    BMI_counter.setTextColor(GREEN);
-                } else if(bmi >= 25 && bmi < 29.99){
-                    BMI_counter.setTextColor(Color.YELLOW);
-                } else if(bmi > 30){
-                    BMI_counter.setTextColor(RED);
-                }
-            }
             Toast.makeText(ProfileActivity.this,"Profil zaktualizowany :)",Toast.LENGTH_LONG).show();
         }
 

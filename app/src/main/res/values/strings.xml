@@ -48,7 +48,33 @@
     <string name="shoulders">Barki</string>
     <string name="chest">Klatka</string>
     <string name="arms">Ręce</string>
-    <string name="warning_excercise">Uwaga, aplikacja jest jedynie organizerem, jeśli masz wątpliwości czy poprawnie wykonujesz ćwiczenie, spytaj odpowiednio wykwalifikowanej osoby</string>
+
+    <!--SHOULDERS-->
+    <string name = "frontActonsofShoulders">Przednie aktony barków</string>
+    <string name="sideActosofShoulders">Boczne aktony barków</string>
+    <string name="backActosofShoulders">Tylne aktony barków</string>
+    <string name="side_fron_back">Całe barki</string>
+    <string name="side_front">Przednie oraz boczne aktony barków</string>
+
+    <string name="SoldierPush">Wyciskanie sztangi sprzed głowy stojąc/siedząc</string>
+    <string name="SoldierPushDesc">Chwytamy sztangę mniej więcej na wyokości barków. Klatka do przodu, naturalna krzywizna kręgosłupa.
+    Podnosimy sztange przed głową, następnie prostujemy się podczas wyciskania.</string>
+    <string name="PushingHalntSides">Unoszenie sztangielek bokiem w górę.</string>
+    <string name="PushinghalntSideDesc">Ćwiczenie te można wykonywać za pomocą sztangielek, jak i wyciągu[bramy].
+    Chwytamy sztangielkę/linkę wyciągu, zachowując naturalne ułożenie ręki wzdłuż tułowa podnosimy sztangielki/linkę bokiem do góry.
+    Zatrzymujemy mniej więcej gdy nadgarstek zrówna się z barkiem[pod pachą będzie kont 90stopni]. Następnie powoli wracamy do początkowej pozycji.</string>
+    <string name="PullGrif">Podciąganie sztangi wzdłuż tułowia</string>
+    <string name="PullGrifDescripction">Chwytamy sztangę na szerokości barków.Ruchem wolnym i kontrolowanym unosimy sztangę w kierunku brody,
+        starając się aby przemieszczała się możliwie najbliżej tułowia. Łokcie przez cały czas trzymamy powyżej gryfu sztangi.
+        Ruch unoszenia kończymy, gdy sztanga znajdzie się na wysokości klatki piersiowej (lub staramy się podciągnąć sztangę aż do brody),
+        opuszczamy również powoli, unikamy odchylania i bujania tułowia.
+        Koncentrujemy się na unoszeniu łokci, a sztanga podąży za nimi.</string>
+    <string name="LiftingKg">Unoszenie sztangielek/ciężaru/wyciągu wzdłuż tułowia.</string>
+    <string name="LiftingKgDesc">Chwytamy sztangielki/krążek np. 10kg/uchwyt na bramie.
+    I powolnym ruchem unosimy przed sobą aż do wysokości barków.</string>
+
+
+
 
 
     <!-- TRAINING LIST ITEM -->

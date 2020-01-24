@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingStart="@dimen/padding"
     android:paddingEnd="@dimen/padding"
     android:paddingTop="@dimen/text_top_size">
@@ -11,7 +11,7 @@
 
     <com.google.android.material.circularreveal.cardview.CircularRevealCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/lindear_under_background"
         app:cardBackgroundColor="@color/custom_cardview_background"
         app:cardCornerRadius="@dimen/small_corner"
         android:padding="@dimen/padding"
@@ -31,31 +31,46 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/training_name_training_list_item"
-                        android:layout_width="284dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="@dimen/small_padding"
-                        android:hint="@string/training_name"
-                        android:textColor="@color/textColor"
-                        android:textSize="18sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <View
-                        android:id="@+id/line1"
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/small_padding"
-                        android:layout_gravity="center|center_horizontal"
-                        android:layout_marginBottom="@dimen/small_padding"
-                        android:background="@color/light_dark"/>
-                    <Button
-                        android:id="@+id/start_training"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end|center"
-                        android:background="@android:color/transparent"
-                        android:text="@string/start" />
+                        <TextView
+                            android:id="@+id/training_name_training_list_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/small_padding"
+                            android:hint="@string/training_name"
+                            android:textColor="@color/textColor"
+                            android:textSize="18sp" />
+
+                         <Button
+                             android:id="@+id/add_new_training"
+                             android:layout_width="@dimen/text_excercises"
+                             android:layout_height="@dimen/text_excercises"
+                             android:layout_gravity="center"
+                             android:layout_marginStart="@dimen/profile_icon_size"
+                             android:background="@drawable/ic_add_new_excercise_to_training"/>
+
+                        <View
+                            android:id="@+id/line1"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|center_horizontal"
+                            android:layout_marginTop="@dimen/small_padding"
+                            android:layout_marginBottom="@dimen/small_padding"
+                            android:background="@color/light_dark" />
+
+                        <Button
+                            android:id="@+id/start_training"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/white"
+                            android:text="@string/start" />
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
@@ -63,22 +78,16 @@
                     android:id="@+id/line2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/floating_button"/>
+                    android:background="@color/ButoonsColor" />
 
-               <androidx.recyclerview.widget.RecyclerView
-                   android:id="@+id/excercises_in_trainings"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_marginTop="@dimen/small_corner"
-                   android:layout_marginStart="@dimen/small_padding">
-
-
-               </androidx.recyclerview.widget.RecyclerView>
-
-
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/excercises_in_trainings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_padding"
+                    android:layout_marginTop="@dimen/small_corner" />
 
             </LinearLayout>
-
 
 
         </RelativeLayout>

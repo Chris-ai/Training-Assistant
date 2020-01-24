@@ -51,17 +51,6 @@ public class EditProfileActivity extends AppCompatActivity {
         button_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                if(editTextName.getText().toString().isEmpty() ||
-                        editTextSurname.getText().toString().isEmpty() ||
-                        editTextAge.getText().toString().isEmpty() ||
-                        editTextWeight.getText().toString().isEmpty() ||
-                        editTextHeight.getText().toString().isEmpty()
-                )
-                {
-                    Toast.makeText(EditProfileActivity.this, "Nie uzupełniłeś wszystkich danych",Toast.LENGTH_LONG).show();
-                } else {
                     Intent returnIntent = new Intent();
 
                     String name = editTextName.getText().toString();
@@ -78,15 +67,14 @@ public class EditProfileActivity extends AppCompatActivity {
 
                     int height = Integer.parseInt(editTextHeight.getText().toString());
                     returnIntent.putExtra(EXTRA_EDIT_HEIGHT, height);
-                    setResult(RESULT_OK, returnIntent);
 
                     int radioID = radioGroup.getCheckedRadioButtonId();
                     radioButton = findViewById(radioID);
 
                     String gender = radioButton.getText().toString();
                     returnIntent.putExtra(EXTRA_EDIT_GENDER,gender);
-                }
 
+                    setResult(RESULT_OK, returnIntent);
                 finish();
             }
 

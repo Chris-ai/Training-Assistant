@@ -13,8 +13,7 @@
         <activity android:name=".AboutActivity" />
         <activity android:name=".RunningActivity" />
         <activity android:name=".StartTrainingActivity" />
-        <activity android:name=".ExcercisesDetailsActivity" />
-        <activity android:name=".MyTrainingActivity" />
+        <activity android:name=".Training.MyTrainingActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ExcercisesActivity" />
         <activity android:name=".EditProfileActivity" />

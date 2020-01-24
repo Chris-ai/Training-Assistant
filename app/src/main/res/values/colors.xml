@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#F55151</color>
-    <color name="InputBoxColor">#000070</color>
-    <color name="colorPrimaryDark">#1a1b29</color>
+    <color name="ButoonsColor">#3C99EE</color>
+    <color name="InputTextColor">#1a1b29</color>
     <color name="textColor">@android:color/black</color>
     <color name="light_dark">#78909c</color>
     <color name="floating_button">#424952</color>
     <color name="custom_cardview_background">#ffffff</color>
+    <color name="background">#eceff1</color>
 </resources>

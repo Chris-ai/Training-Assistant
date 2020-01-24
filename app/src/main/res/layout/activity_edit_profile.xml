@@ -131,6 +131,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/size"
         android:textSize="@dimen/image_text_size"
-        android:text="@string/button_save"/>
+        android:textColor="#FFFFFF"
+        android:text="@string/button_save"
+        android:background="@drawable/my_button"/>
 
 </LinearLayout>

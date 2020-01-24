@@ -21,11 +21,12 @@
         android:layout_marginEnd="@dimen/padding"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <EditText
-        android:id="@+id/obciazenie_kg"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/kgs"/>
+        <EditText
+            android:id="@+id/obciazenie_kg"
+            android:layout_width="112dp"
+            android:layout_gravity="center"
+            android:layout_height="42dp"
+            android:hint="@string/kgs" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -35,16 +36,18 @@
         android:layout_marginEnd="@dimen/padding"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <EditText
-        android:id="@+id/powtorzenia_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reps"/>
+        <EditText
+            android:id="@+id/powtorzenia_id"
+            android:layout_width="109dp"
+            android:layout_gravity="center"
+            android:layout_height="42dp"
+            android:hint="@string/reps" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.chip.Chip
         android:id="@+id/chip"
         android:layout_width="0dp"
+        android:layout_gravity="top|center"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
 

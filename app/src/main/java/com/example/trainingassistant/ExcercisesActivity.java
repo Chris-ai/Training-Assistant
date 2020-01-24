@@ -10,6 +10,12 @@ import java.util.ArrayList;
 
 public class ExcercisesActivity extends AppCompatActivity {
 
+    public ArrayList<SpinnerListItem> LegList = new ArrayList<>();
+    public ArrayList<SpinnerListItem> ArmsList = new ArrayList<>();
+    public ArrayList<SpinnerListItem> ShouldersList = new ArrayList<>();
+    public ArrayList<SpinnerListItem> AbsList = new ArrayList<>();
+    public ArrayList<SpinnerListItem> ChestList = new ArrayList<>();
+    public ArrayList<SpinnerListItem> BackList = new ArrayList<>();
 
     private Spinner LegsSpinner;
     private Spinner ShouldersSpinner;
@@ -17,6 +23,7 @@ public class ExcercisesActivity extends AppCompatActivity {
     private Spinner AbsSpinner;
     private Spinner ChestSpinner;
     private Spinner BackSpinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,41 +36,41 @@ public class ExcercisesActivity extends AppCompatActivity {
         ChestSpinner = findViewById(R.id.chest_spinner);
         BackSpinner = findViewById(R.id.back_spinner);
 
-        ArrayList<SpinnerListItem> List = new ArrayList<>();
-        List.add(new SpinnerListItem(null,null,null));
-        List.add(new SpinnerListItem("Przysiady","Mięsnie czworogłowe i dwugłowe uda", "Cwiczenie wykonujemy najlepiej z normalną szatangą, kładziemy ją na plecach i w powolnym przysiadzie próbujemy unieść ciężar całej sztangi"));
-        List.add(new SpinnerListItem("Przysiady","Mięsnie czworogłowe i dwugłowe uda", "Cwiczenie wykonujemy najlepiej z normalną szatangą, kładziemy ją na plecach i w powolnym przysiadzie próbujemy unieść ciężar całej sztangi"));
-        List.add(new SpinnerListItem("Przysiady","Mięsnie czworogłowe i dwugłowe uda", "Cwiczenie wykonujemy najlepiej z normalną szatangą, kładziemy ją na plecach i w powolnym przysiadzie próbujemy unieść ciężar całej sztangi"));
-        List.add(new SpinnerListItem("Przysiady","Mięsnie czworogłowe i dwugłowe uda", "Cwiczenie wykonujemy najlepiej z normalną szatangą, kładziemy ją na plecach i w powolnym przysiadzie próbujemy unieść ciężar całej sztangi"));
-        List.add(new SpinnerListItem("Przysiady","Mięsnie czworogłowe i dwugłowe uda", "Cwiczenie wykonujemy najlepiej z normalną szatangą, kładziemy ją na plecach i w powolnym przysiadzie próbujemy unieść ciężar całej sztangi"));
-        List.add(new SpinnerListItem("Przysiady","Mięsnie czworogłowe i dwugłowe uda", "Cwiczenie wykonujemy najlepiej z normalną szatangą, kładziemy ją na plecach i w powolnym przysiadzie próbujemy unieść ciężar całej sztangi"));
-        List.add(new SpinnerListItem("Przysiady","Mięsnie czworogłowe i dwugłowe uda", "Cwiczenie wykonujemy najlepiej z normalną szatangą, kładziemy ją na plecach i w powolnym przysiadzie próbujemy unieść ciężar całej sztangi"));
+
+        ShouldersList.add(new SpinnerListItem(null,null,null));
+        ShouldersList.add(new SpinnerListItem("@string/SoldierPush","@string/frontActonsofShoulders", "@stringSoldierPushDesc"));
 
 
-        SpinnerAdapter adapter = new SpinnerAdapter(this, List);
+
+        SpinnerAdapter LegsAdapter = new SpinnerAdapter(this, ShouldersList);
+        SpinnerAdapter ChestAdapter = new SpinnerAdapter(this, ChestList);
+        SpinnerAdapter ShouldersAdapter = new SpinnerAdapter(this, ShouldersList);
+        SpinnerAdapter AbsAdapter = new SpinnerAdapter(this, AbsList);
+        SpinnerAdapter ArmsAdapter = new SpinnerAdapter(this, ArmsList);
+        SpinnerAdapter BackAdapter = new SpinnerAdapter(this, BackList);
 
         if(LegsSpinner != null){
-            LegsSpinner.setAdapter(adapter);
+            LegsSpinner.setAdapter(LegsAdapter);
         }
 
         if(ShouldersSpinner != null){
-            ShouldersSpinner.setAdapter(adapter);
+            ShouldersSpinner.setAdapter(LegsAdapter);
         }
 
         if(ArmsSpinner != null){
-            ArmsSpinner.setAdapter(adapter);
+            ArmsSpinner.setAdapter(LegsAdapter);
         }
 
         if(ChestSpinner != null){
-            ChestSpinner.setAdapter(adapter);
+            ChestSpinner.setAdapter(LegsAdapter);
         }
 
         if(AbsSpinner != null){
-            AbsSpinner.setAdapter(adapter);
+            AbsSpinner.setAdapter(LegsAdapter);
         }
 
         if(BackSpinner != null){
-            BackSpinner.setAdapter(adapter);
+            BackSpinner.setAdapter(LegsAdapter);
         }
     }
 }
