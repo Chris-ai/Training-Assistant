@@ -31,3 +31,13 @@ t
 Dapp/src/main/java/com/example/trainingassistant/SpinnerListItem.java,4\b\4bfe17f44b2bb68e1c2e610a6e65763f49df97a7
 s
 Capp/src/main/java/com/example/trainingassistant/SpinnerAdapter.java,f\4\f49db35fb0296db38182463f219f32872a34f7ff
+v
+Fapp/src/main/java/com/example/trainingassistant/Training/Training.java,3\0\30601a453d59e5b0e5205cba363fb493187e4eaf
+~
+Napp/src/main/java/com/example/trainingassistant/Training/ExcerciseAdapter.java,0\a\0a3528877451cabefa0d8a6e5de0481b5d034cff
+€
+Papp/src/main/java/com/example/trainingassistant/Training/MyTrainingActivity.java,b\3\b38b23397c24f13675545cc88fe206c87aedbe2d
+w
+Gapp/src/main/java/com/example/trainingassistant/Training/Excercise.java,6\1\6134e571b0aa8997ca68b4053540e957acf2fe18
+}
+Mapp/src/main/java/com/example/trainingassistant/Training/TrainingAdapter.java,4\5\45ea1be3f9a89c2ebc7b068a3add11d8c61de1ec

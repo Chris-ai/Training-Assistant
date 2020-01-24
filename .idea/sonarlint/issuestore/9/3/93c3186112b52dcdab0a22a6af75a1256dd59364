@@ -1,5 +1,4 @@
 
-Qsquid:S1068".Remove this unused "BMI_button" private field.(ìÌÌıÿÿÿÿ8ÀÉ¥ç÷-
-Dsquid:S1659W"'Declare "heightinm" on a separate line.(ÓãÈL8¦ßß÷-
-qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ8æàüÚ÷-
-osquid:S3776:"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(¹Î¾8æàüÚ÷-
+csquid:UselessImportCheck"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ8¨­Âı-
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ8”èƒ¿ı-
+Lsquid:S1068".Remove this unused "personList" private field.(ˆó¹à8Ø¡™Àı-
