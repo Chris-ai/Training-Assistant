@@ -265,10 +265,10 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/imageHealth"
+                                    android:id="@+id/googleMaps"
                                     android:layout_width="@dimen/size"
                                     android:layout_height="@dimen/size"
-                                    android:src="@drawable/health"
+                                    android:src="@drawable/maps"
                                     android:layout_centerInParent="true"/>
 
                                 <TextView
@@ -276,7 +276,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="@string/health"
                                     android:textSize="@dimen/image_text_size"
-                                    android:layout_below="@id/imageHealth"
+                                    android:layout_below="@id/googleMaps"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="@dimen/margin_row"
                                     android:layout_marginBottom="@dimen/margin_row"

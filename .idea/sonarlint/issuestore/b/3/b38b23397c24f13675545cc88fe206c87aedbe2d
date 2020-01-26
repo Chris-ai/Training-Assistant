@@ -1,5 +1,6 @@
 
-Wsquid:S1068"4Remove this unused "ListOfExcercises" private field.(á”êûÿÿÿÿ8¹ ÜÊı-
-lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(§„š8Ş®·×÷-
-xsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡Ğè18ê¥ÉÌı-
-esquid:S2259Q"BA "NullPointerException" could be thrown; "data" is nullable here.(ºÍĞ³üÿÿÿÿ8Œš»Ìı-
+€squid:UselessImportCheck"PRemove this unused import 'com.example.trainingassistant.StartTrainingActivity'.(®ãÃÛıÿÿÿÿ8ßÅÈùı-
+lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(§„š8–á»øı-
+bsquid:UselessImportCheck"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8ßìÉùı-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘–Ÿş8ùÌ¼ùı-
+xsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡Ğè18Åì¼øı-

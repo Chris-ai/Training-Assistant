@@ -1,46 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".StartTrainingActivity">
+    tools:context=".MyTrainingActivity">
 
 
-
-    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/custom_cardview_background">
+        android:orientation="horizontal"
+        android:background="#e2e2e2">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:background="@android:color/transparent"
+            android:text="@string/finish_training"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-               <Button
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="end|center"
-                   android:layout_marginEnd="@dimen/small_padding"
-                   android:background="@android:color/transparent"
-                   android:text="@string/finish_training"/>
-
-
-            </LinearLayout>
-        </RelativeLayout>
-
-    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
-
+    </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/size"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/size"
         android:layout_marginStart="@dimen/kmdimen"
         android:layout_marginEnd="@dimen/kmdimen"
@@ -60,39 +45,57 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/size"
-        android:paddingStart="@dimen/kmdimen"
+        android:paddingStart="@dimen/padding"
         android:layout_marginBottom="@dimen/small_padding">
 
         <TextView
             android:id="@+id/series"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:paddingEnd="@dimen/padding"
-            android:textSize="@dimen/text_top_size"
+            android:textColor="@color/ButoonsColor"
+            android:textSize="15sp"
             android:text="@string/sets" />
 
         <TextView
             android:id="@+id/kgs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/text_top_size"
+            android:textSize="15sp"
+            android:textStyle="bold"
             android:paddingEnd="@dimen/padding"
             android:text="@string/kgs"/>
 
         <TextView
             android:id="@+id/reps"
             android:layout_width="wrap_content"
-            android:textSize="@dimen/text_top_size"
+            android:textSize="15sp"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
             android:text="@string/reps"/>
 
 
     </LinearLayout>
 
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/kmdimen">
+        android:layout_marginStart="@dimen/padding">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/floating_button_add_new_series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/size"
+        android:layout_gravity="center"
+        android:background="@drawable/my_button"
+        android:text="@string/add"/>
+
 </LinearLayout>

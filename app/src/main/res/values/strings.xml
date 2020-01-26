@@ -6,18 +6,16 @@
     <string name="calendar">Kalendarz</string>
     <string name="training">Mój Trening</string>
     <string name="excercises">Ćwiczenia</string>
-    <string name="health">Trening biegowy</string>
+    <string name="health">Znajdź siłownie</string>
     <string name="about">Ustawienia</string>
-
 
     <!-- HEADERS -->
     <string name="top_text">ORGANIZER TRENINGOWY</string>
-    <string name="profile_text">Imię i</string>
-    <string name="profile_text2">nazwisko</string>
 
     <!-- PROFILE-->
-    <string name="how_many_trainings">Ilość treningów</string>
-    <string name="training_counts">0</string>
+    <string name="profile_text">Imię</string>
+    <string name="profile_text2">nazwisko</string>
+
     <string name="Male">Mężczyzna</string>
     <string name="Female">Kobieta</string>
     <string name="age">Wiek:</string>
@@ -49,33 +47,6 @@
     <string name="chest">Klatka</string>
     <string name="arms">Ręce</string>
 
-    <!--SHOULDERS-->
-    <string name = "frontActonsofShoulders">Przednie aktony barków</string>
-    <string name="sideActosofShoulders">Boczne aktony barków</string>
-    <string name="backActosofShoulders">Tylne aktony barków</string>
-    <string name="side_fron_back">Całe barki</string>
-    <string name="side_front">Przednie oraz boczne aktony barków</string>
-
-    <string name="SoldierPush">Wyciskanie sztangi sprzed głowy stojąc/siedząc</string>
-    <string name="SoldierPushDesc">Chwytamy sztangę mniej więcej na wyokości barków. Klatka do przodu, naturalna krzywizna kręgosłupa.
-    Podnosimy sztange przed głową, następnie prostujemy się podczas wyciskania.</string>
-    <string name="PushingHalntSides">Unoszenie sztangielek bokiem w górę.</string>
-    <string name="PushinghalntSideDesc">Ćwiczenie te można wykonywać za pomocą sztangielek, jak i wyciągu[bramy].
-    Chwytamy sztangielkę/linkę wyciągu, zachowując naturalne ułożenie ręki wzdłuż tułowa podnosimy sztangielki/linkę bokiem do góry.
-    Zatrzymujemy mniej więcej gdy nadgarstek zrówna się z barkiem[pod pachą będzie kont 90stopni]. Następnie powoli wracamy do początkowej pozycji.</string>
-    <string name="PullGrif">Podciąganie sztangi wzdłuż tułowia</string>
-    <string name="PullGrifDescripction">Chwytamy sztangę na szerokości barków.Ruchem wolnym i kontrolowanym unosimy sztangę w kierunku brody,
-        starając się aby przemieszczała się możliwie najbliżej tułowia. Łokcie przez cały czas trzymamy powyżej gryfu sztangi.
-        Ruch unoszenia kończymy, gdy sztanga znajdzie się na wysokości klatki piersiowej (lub staramy się podciągnąć sztangę aż do brody),
-        opuszczamy również powoli, unikamy odchylania i bujania tułowia.
-        Koncentrujemy się na unoszeniu łokci, a sztanga podąży za nimi.</string>
-    <string name="LiftingKg">Unoszenie sztangielek/ciężaru/wyciągu wzdłuż tułowia.</string>
-    <string name="LiftingKgDesc">Chwytamy sztangielki/krążek np. 10kg/uchwyt na bramie.
-    I powolnym ruchem unosimy przed sobą aż do wysokości barków.</string>
-
-
-
-
 
     <!-- TRAINING LIST ITEM -->
     <string name="training_name">Nazwa treningu</string>
@@ -88,9 +59,15 @@
     <string name="finish_training">Zakończ</string>
     <string name="comment">Notatki</string>
     <string name="kgs">Obciążenie</string>
-    <string name="sets">Seria</string>
+    <string name="sets">Ćwiczenie</string>
     <string name="reps">Powtórzenia</string>
+    <string name="add">Dodaj</string>
 
 
+    <string name="addedCorrectly">Ćwiczenie dodane poprawnie.</string>
+    <string name="editedCorrectly">Pomyślnie edytowałeś ćwiczenie.</string>
+    <string name="changesNotSaved">Nie zapisałeś zmian :/</string>
+    <string name="failed">Nie uzupełniłeś wszystkich pól :(</string>
+    <string name="deleted_correctly">Pomyślnie usunięto ćwiczenie</string>
 
 </resources>

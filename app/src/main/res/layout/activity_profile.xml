@@ -68,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:hint="@string/profile_text"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/text_top_size"
                     android:textStyle="bold" />
 
@@ -79,7 +79,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/small_padding"
                     android:hint="@string/profile_text2"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/text_top_size"
                     android:textStyle="bold" />
             </LinearLayout>

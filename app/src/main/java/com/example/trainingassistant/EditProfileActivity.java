@@ -2,6 +2,7 @@ package com.example.trainingassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -47,42 +48,59 @@ public class EditProfileActivity extends AppCompatActivity {
 
        final Button button_save = findViewById(R.id.button_save);
 
-
         button_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Intent returnIntent = new Intent();
+                Intent returnIntent = new Intent();
+
+                if (TextUtils.isEmpty(editTextName.getText()) || TextUtils.isEmpty(editTextSurname.getText()) ||
+                        TextUtils.isEmpty(editTextAge.getText().toString()) || TextUtils.isEmpty(editTextWeight.getText().toString())
+                        || TextUtils.isEmpty(editTextHeight.getText().toString())) {
+                    setResult(RESULT_CANCELED, returnIntent);
+
+                } else {
 
                     String name = editTextName.getText().toString();
-                    String surname = editTextSurname.getText().toString();
-
                     returnIntent.putExtra(EXTRA_EDIT_NAME, name);
+
+                    String surname = editTextSurname.getText().toString();
                     returnIntent.putExtra(EXTRA_EDIT_SURNAME, surname);
 
-                    int age = Integer.parseInt(editTextAge.getText().toString());
-                    returnIntent.putExtra(EXTRA_EDIT_AGE, age);
+                    try {
+                        int age = Integer.parseInt(editTextAge.getText().toString());
+                            returnIntent.putExtra(EXTRA_EDIT_AGE, age);
+                    } catch (NumberFormatException e){
+                        e.printStackTrace();
+                    }
 
-                    int weight = Integer.parseInt(editTextWeight.getText().toString());
-                    returnIntent.putExtra(EXTRA_EDIT_WEIGHT, weight);
+                    try {
+                        int weight = Integer.parseInt(editTextWeight.getText().toString());
+                        returnIntent.putExtra(EXTRA_EDIT_WEIGHT, weight);
+                    } catch (NumberFormatException e){
+                        e.printStackTrace();
+                    }
 
-                    int height = Integer.parseInt(editTextHeight.getText().toString());
-                    returnIntent.putExtra(EXTRA_EDIT_HEIGHT, height);
+                    try{
+                        int height = Integer.parseInt(editTextHeight.getText().toString());
+                        returnIntent.putExtra(EXTRA_EDIT_HEIGHT, height);
+                    }catch (NumberFormatException e){
+                        e.printStackTrace();
+                    }
 
                     int radioID = radioGroup.getCheckedRadioButtonId();
                     radioButton = findViewById(radioID);
 
                     String gender = radioButton.getText().toString();
-                    returnIntent.putExtra(EXTRA_EDIT_GENDER,gender);
+                    if (gender.equals("")) {
+                        gender = "none";
+                    }
+                    returnIntent.putExtra(EXTRA_EDIT_GENDER, gender);
 
                     setResult(RESULT_OK, returnIntent);
+                }
+
                 finish();
             }
-
-
         });
-
-
-
-
     }
 }

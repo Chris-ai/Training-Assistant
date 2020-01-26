@@ -9,16 +9,38 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddNewTraining"></activity>
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".RunningActivity" />
-        <activity android:name=".StartTrainingActivity" />
-        <activity android:name=".Training.MyTrainingActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ExcercisesActivity" />
-        <activity android:name=".EditProfileActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".MyTrainingActivity"></activity>
+        <activity android:name=".AddNewSeries" />
+        <activity android:name=".CalendarActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".AddNewTraining"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindYourGym"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExcercisesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

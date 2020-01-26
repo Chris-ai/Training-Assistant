@@ -1,2 +1,4 @@
 
 qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡Ðè1
+]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ð‹G8÷¦Ýùý-
+€squid:UselessImportCheck"PRemove this unused import 'com.example.trainingassistant.StartTrainingActivity'.(®ãÃÛýÿÿÿÿ8÷¦Ýùý-

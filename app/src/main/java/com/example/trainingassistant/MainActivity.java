@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.trainingassistant.Training.MyTrainingActivity;
-
 public class MainActivity extends AppCompatActivity {
 
 
@@ -53,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         button_cardio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RunningActivity.class);
+                Intent intent = new Intent(MainActivity.this, FindYourGym.class);
                 MainActivity.this.startActivity(intent);
             }
         });
@@ -62,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
+
+        button_calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
                 MainActivity.this.startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
 
-isquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(ÎÐê‹8û¬‘Íý-
 qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡Ðè1
-isquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(ãÛý—8äÒ“Íý-
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8É¯Ûõý-
+Msquid:EmptyStatementUsageCheck"Remove this empty statement.(ÛÿÁÜ8ÿÈÓõý-

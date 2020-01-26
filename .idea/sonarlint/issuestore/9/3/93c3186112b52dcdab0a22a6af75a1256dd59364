@@ -1,4 +1,13 @@
 
-csquid:UselessImportCheck"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ8¨­Âı-
-qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ8”èƒ¿ı-
-Lsquid:S1068".Remove this unused "personList" private field.(ˆó¹à8Ø¡™Àı-
+esquid:S1192Z"GDefine a constant instead of duplicating this literal "weight" 4 times.(áü¤€8òòôìı-
+csquid:UselessImportCheck	"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ8¨­Âı-
+bsquid:UselessImportCheck"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ô—ëı-
+Hsquid:S1659!"%Declare "surname" on a separate line.(ÖÁÜòşÿÿÿÿ8»ÿÈëı-
+esquid:S1192`"GDefine a constant instead of duplicating this literal "height" 4 times.(¢‚Ú¬8òòôìı-
+fsquid:S1192N"HDefine a constant instead of duplicating this literal "surname" 4 times.(Á¶¨¦8òòôìı-
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ8”èƒ¿ı-
+Gsquid:S1659!"$Declare "gender" on a separate line.(ÖÁÜòşÿÿÿÿ8»ÿÈëı-
+[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ô—ëı-
+esquid:S1192e"GDefine a constant instead of duplicating this literal "gender" 4 times.(Ô›ï8Æ«õìı-
+Asquid:S1659""$Declare "weight" on a separate line.(çÁÈt8»ÿÈëı-
+Asquid:S1659""$Declare "height" on a separate line.(çÁÈt8»ÿÈëı-
