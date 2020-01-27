@@ -2,7 +2,6 @@
 <resources>
     <dimen name="padding">16dp</dimen>
     <dimen name="text_top_size">20sp</dimen>
-    <dimen name="warning_size">13sp</dimen>
     <dimen name="margin_row">10dp</dimen>
     <dimen name="margin_beetween">8dp</dimen>
     <dimen name="size">50dp</dimen>
@@ -16,4 +15,7 @@
     <dimen name="excercise_list_start">250dp</dimen>
     <dimen name="small_corner">3dp</dimen>
     <dimen name="InputTextLayout">70dp</dimen>
+    <dimen name="CardViewHigh">157dp</dimen>
+    <dimen name="TextSize20">20sp</dimen>
+    <dimen name="LineRow">1dp</dimen>
 </resources>

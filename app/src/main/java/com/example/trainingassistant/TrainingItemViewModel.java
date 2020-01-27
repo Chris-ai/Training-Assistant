@@ -33,5 +33,9 @@ public class TrainingItemViewModel extends AndroidViewModel {
         trainingItemRepository.delete(item);
     }
 
+    public void deleteAll() {
+        trainingItemRepository.deleteAll();
+    }
+
 
 }

@@ -1,7 +1,12 @@
 package com.example.trainingassistant;
 
 
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,19 +18,36 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.prefs.PreferenceChangeEvent;
+import java.util.prefs.Preferences;
 
 public class MyTrainingActivity extends AppCompatActivity {
 
+    private static final String USER_TRAININGS_NOTES = "Notatki_usera";
     private TrainingItemViewModel trainingItemViewModel;
     public static final int NEW_ITEM_ACTIVITY_REQUEST_CODE = 1;
     public static final int EDIT_ITEM_ACTIVITY_REQUEST_CODE = 2;
+    public static final String USER_TRAININGS_COUNTER = "user_counter";
+    public static final String SHARED_PREFS = "sharedPrefs";
+
+    private Dialog epicDialog;
+    TextView message;
+    Button button_cancel;
+    Button button_accept;
+
+    TextView notes;
+
+    public int counter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +59,11 @@ public class MyTrainingActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        notes = findViewById(R.id.edit_text_training_start);
+
+        epicDialog = new Dialog(this);
+
+
         trainingItemViewModel = ViewModelProviders.of(this).get(TrainingItemViewModel.class);
         trainingItemViewModel.findAll().observe(this, new Observer<List<TrainingItem>>() {
             @Override
@@ -44,10 +71,11 @@ public class MyTrainingActivity extends AppCompatActivity {
                 adapter.setTrainingItems(trainingItems);
             }
         });
+
         /**
-         * Button action
+         * Buttons action
          */
-        Button button_add = findViewById(R.id.floating_button_add_new_series);
+        final Button button_add = findViewById(R.id.floating_button_add_new_series);
         button_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +83,81 @@ public class MyTrainingActivity extends AppCompatActivity {
                 startActivityForResult(MyIntent,NEW_ITEM_ACTIVITY_REQUEST_CODE);
             }
         });
+
+        final Button button_end = findViewById(R.id.end_session);
+        button_end.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    showEpicDialog();
+
+            }
+        });
+
+        saveData(); //Zapisywanie countera oraz notatek do shared pref
     }
+
+    private void saveData() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putInt(USER_TRAININGS_COUNTER,counter);
+        editor.putString(USER_TRAININGS_NOTES,notes.getText().toString());
+
+        editor.apply();
+    }
+
+    private void loadData(){
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+
+        counter = sharedPreferences.getInt(USER_TRAININGS_COUNTER,0);
+        notes.setText(sharedPreferences.getString(USER_TRAININGS_NOTES, String.valueOf(R.string.No_notes_detected)));
+    }
+
+    private int getSharedCounter(){
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+        return sharedPreferences.getInt(USER_TRAININGS_COUNTER,0);
+    }
+
+    private String getSharedNotes(){
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+        return sharedPreferences.getString(USER_TRAININGS_NOTES,String.valueOf(R.string.No_notes_detected));
+    }
+
+
+    public void showEpicDialog(){
+
+        epicDialog.setContentView(R.layout.dialog_box);
+        button_accept = epicDialog.findViewById(R.id.button_yes_in_dialogbox);
+        button_cancel = epicDialog.findViewById(R.id.button_no_in_dialogbox);
+        message = epicDialog.findViewById(R.id.message_indb);
+
+        button_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                epicDialog.dismiss();
+            }
+        });
+
+        button_accept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                counter++;
+                saveData();
+                loadData();
+                Intent MyIntent = new Intent(MyTrainingActivity.this, AboutActivity.class);
+                MyIntent.putExtra(AboutActivity.COUNTER_KEY,getSharedCounter());
+                MyIntent.putExtra(AboutActivity.NEW_TRAINING_NOTE, getSharedNotes());
+                startActivity(MyIntent);
+
+                trainingItemViewModel.deleteAll();
+                finish();
+            }
+        });
+
+        epicDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        epicDialog.show();
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -135,60 +237,37 @@ public class MyTrainingActivity extends AppCompatActivity {
     }
 
 
-    private class TrainingAdapter extends RecyclerView.Adapter<TrainingHolder>{
+    private class TrainingAdapter extends RecyclerView.Adapter<TrainingHolder> {
 
         private List<TrainingItem> trainingItems;
-
-
 
         @NonNull
         @Override
         public TrainingHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            return new TrainingHolder(getLayoutInflater(),parent);
+            return new TrainingHolder(getLayoutInflater(), parent);
         }
 
         @Override
         public void onBindViewHolder(@NonNull TrainingHolder holder, int position) {
-            if(trainingItems != null){
+            if (trainingItems != null) {
                 TrainingItem item = trainingItems.get(position);
-                holder.bind(item,position);
+                holder.bind(item, position);
             } else {
-                Log.d("MyTrainingActivity","NO TRAININGS");
+                Log.d("MyTrainingActivity", "NO TRAININGS");
             }
         }
 
         @Override
         public int getItemCount() {
-            if(trainingItems != null){
+            if (trainingItems != null) {
                 return trainingItems.size();
             } else
                 return 0;
         }
 
-        void setTrainingItems(List<TrainingItem> trainingItems){
+        void setTrainingItems(List<TrainingItem> trainingItems) {
             this.trainingItems = trainingItems;
             notifyDataSetChanged();
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -19,16 +19,16 @@ public interface TrainingItemDao {
     void insert(TrainingItem item);
 
     @Update
-    public void update(TrainingItem item);
+    void update(TrainingItem item);
 
     @Delete
-    public void delete(TrainingItem trainingItem);
+    void delete(TrainingItem trainingItem);
 
     @Query("DELETE FROM trainingitem")
-    public void deleteAll();
+    void deleteAll();
 
     @Query("SELECT * FROM trainingitem ORDER BY name")
-    public LiveData<List<TrainingItem>> findAll();
+    LiveData<List<TrainingItem>> findAll();
 
 
 

@@ -1,0 +1,11 @@
+
+hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.LiveData'.(ß„İŞşÿÿÿÿ8ÄàŸş-
+osquid:UselessImportCheck"?Remove this unused import 'androidx.appcompat.app.AlertDialog'.(¼Ìï¨üÿÿÿÿ8 Åš¢ş-
+csquid:UselessImportCheck "8Remove this unused import 'java.util.prefs.Preferences'.(àñì8ÊçÉ¤ş-
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8 åŠ ş-
+Ksquid:S1604D"(Make this anonymous inner class a lambda(¢Îñªşÿÿÿÿ8 ÓÈ¤ş-
+rsquid:UselessImportCheck"BRemove this unused import 'java.util.prefs.PreferenceChangeEvent'.(é“ÿ’øÿÿÿÿ8 ÓÈ¤ş-
+"squid:ClassVariableVisibilityCheck2"SMake counter a static final constant or non-public and provide accessors if needed.(Ô¦Óªşÿÿÿÿ8å¿Ç ş-
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8ªŒß¤ş-
+fsquid:S2259­"BA "NullPointerException" could be thrown; "data" is nullable here.(ã¤Ä‡øÿÿÿÿ8Š­¹³ş-
+esquid:MaximumInheritanceDepth""<This class has 6 parents which is greater than 5 authorized.(§„š

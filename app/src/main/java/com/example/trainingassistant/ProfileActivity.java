@@ -48,7 +48,6 @@ public class ProfileActivity extends AppCompatActivity {
         textViewGender = findViewById(R.id.gender);
         textViewSurname = findViewById(R.id.surname);
 
-
         edit_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,13 +69,13 @@ public class ProfileActivity extends AppCompatActivity {
             name = data.getStringExtra(EditProfileActivity.EXTRA_EDIT_NAME);
             if(name != null && !name.equals("")) {
               editor.putString("name", name);
-                textViewName.setText(sharedPreferences.getString("name","Imię"));
+                textViewName.setText(sharedPreferences.getString("name",""));
             }
 
             surname = data.getStringExtra(EditProfileActivity.EXTRA_EDIT_SURNAME);
             if(surname != null && !surname.equals("")) {
                editor.putString("surname",surname);
-               textViewSurname.setText(sharedPreferences.getString("surname","Nazwisko"));
+               textViewSurname.setText(sharedPreferences.getString("surname",""));
             }
 
             age = data.getIntExtra(EditProfileActivity.EXTRA_EDIT_AGE, 0);

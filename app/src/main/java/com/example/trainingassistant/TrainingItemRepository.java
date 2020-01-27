@@ -39,4 +39,10 @@ class TrainingItemRepository {
             trainingItemDao.delete(item);
         });
     }
+
+    void deleteAll(){
+        MyDatabase.databaseWriteExecutor.execute( () -> {
+            trainingItemDao.deleteAll();
+        });
+    }
 }

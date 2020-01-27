@@ -1,0 +1,9 @@
+
+esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(Ù¡«ˆ
+_squid:UselessImportCheck
+"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8‚ö‹þ-
+bsquid:UselessImportCheck	"2Remove this unused import 'android.widget.Button'.(²òžýÿÿÿÿ8‚ö‹þ-
+^squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äþÿÿÿÿ8æÁŒþ-
+]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ð‹G8æÁŒþ-
+csquid:UselessImportCheck"3Remove this unused import 'android.text.TextUtils'.(û˜½Õøÿÿÿÿ8æÁŒþ-
+Ksquid:S1185"(Remove this method to simply inherit it.(ž¨Œþÿÿÿÿ8æÁŒþ-

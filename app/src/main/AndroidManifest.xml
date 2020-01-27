@@ -9,9 +9,12 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyTrainingActivity"></activity>
-        <activity android:name=".AddNewSeries" />
-        <activity android:name=".CalendarActivity" />
+        <activity android:name=".MyTrainingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddNewSeries"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CalendarActivity"
+            android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
