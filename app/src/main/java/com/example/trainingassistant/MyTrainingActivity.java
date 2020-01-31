@@ -33,17 +33,22 @@ import java.util.prefs.Preferences;
 
 public class MyTrainingActivity extends AppCompatActivity {
 
-    private static final String USER_TRAININGS_NOTES = "Notatki_usera";
+    public static final String USER_TRAININGS_COUNTER = "User_counter";
+    public static final String USER_TRAININGS_NOTES = "Notatki_usera";
+    public static final String SEND_LAST_NOTES = "Ostatnie notatki";
+    public static final String SEND_COUNTER = "Licznik";
+
+
     private TrainingItemViewModel trainingItemViewModel;
+
     public static final int NEW_ITEM_ACTIVITY_REQUEST_CODE = 1;
     public static final int EDIT_ITEM_ACTIVITY_REQUEST_CODE = 2;
-    public static final String USER_TRAININGS_COUNTER = "user_counter";
+
     public static final String SHARED_PREFS = "sharedPrefs";
 
-    TextView notes;
-    TextView counter_tv;
+    private TextView notes;
 
-    public int counter;
+    private int counter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +61,8 @@ public class MyTrainingActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         notes = findViewById(R.id.edit_text_training_start);
-        counter_tv = findViewById(R.id.counter_id);
-        
+        loadData();
+
         trainingItemViewModel = ViewModelProviders.of(this).get(TrainingItemViewModel.class);
         trainingItemViewModel.findAll().observe(this, new Observer<List<TrainingItem>>() {
             @Override
@@ -82,9 +87,29 @@ public class MyTrainingActivity extends AppCompatActivity {
         button_end.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                counter++;
+                saveData();
+                Intent myIntent = new Intent(MyTrainingActivity.this,AboutActivity.class);
+                myIntent.putExtra(SEND_COUNTER,getSharedCounter());
+                myIntent.putExtra(SEND_LAST_NOTES,getSharedNotes());
+                startActivity(myIntent);
+                finish();
             }
         });
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        saveData();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadData();
+    }
+
 
     private void saveData() {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
@@ -100,7 +125,7 @@ public class MyTrainingActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
 
         counter = sharedPreferences.getInt(USER_TRAININGS_COUNTER,0);
-        notes.setText(sharedPreferences.getString(USER_TRAININGS_NOTES, String.valueOf(R.string.No_notes_detected)));
+       // notes.setText(sharedPreferences.getString(USER_TRAININGS_NOTES, "Brak notatek"));
     }
 
     private int getSharedCounter(){

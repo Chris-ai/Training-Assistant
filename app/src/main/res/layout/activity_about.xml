@@ -99,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:textSize="@dimen/TextSize20"
+                    android:textSize="14sp"
                     android:layout_marginTop="@dimen/margin_row"
                     android:layout_gravity="center"/>
 

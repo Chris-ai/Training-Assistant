@@ -1,10 +1,10 @@
 
-Fsquid:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆïìı-
-asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ÖÉìı-
-Fsquid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆïìı-
-Fsquid:S1148W"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆïìı-
-qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(’„¸°ÿÿÿÿÿ8¯ÖÓÚ÷-
 ^squid:UselessImportCheck"4Remove this unused import 'android.widget.CheckBox'.(Ùáb8úÚÃú-
-_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8†Ë–ìı-
 usquid:S3776&"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¨Œşÿÿÿÿ8ÔÙìı-
 ]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8¯ÖÓÚ÷-
+Fsquid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆïìı-
+Fsquid:S1148W"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆïìı-
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8†Ë–ìı-
+asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ÖÉìı-
+Fsquid:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆïìı-
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(’„¸°ÿÿÿÿÿ8¯ÖÓÚ÷-

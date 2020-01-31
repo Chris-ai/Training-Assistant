@@ -1,13 +1,13 @@
 
-fsquid:S2259¹"BA "NullPointerException" could be thrown; "data" is nullable here.(ã¤Ä‡øÿÿÿÿ8…Ÿ½ÿ-
-Ysquid:UselessImportCheck".Remove this unused import 'java.util.Objects'.(¼¸õ›8¸ÎÖ¹ÿ-
-osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ê½™¸ÿÿÿÿÿ8›å´½ÿ-
-Ksquid:S1604L"(Make this anonymous inner class a lambda(¢Îñªşÿÿÿÿ8…Ÿ½ÿ-
-Qsquid:S10680".Remove this unused "epicDialog" private field.(é¬İ»ûÿÿÿÿ8›å´½ÿ-
-osquid:UselessImportCheck"?Remove this unused import 'androidx.appcompat.app.AlertDialog'.(¼Ìï¨üÿÿÿÿ8 Åš¢ş-
-hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.LiveData'.(ß„İŞşÿÿÿÿ8ÄàŸş-
-esquid:MaximumInheritanceDepth#"<This class has 6 parents which is greater than 5 authorized.(§„š
+lsquid:MaximumInheritanceDepth""<This class has 6 parents which is greater than 5 authorized.(§„š8˜ï‰Ùÿ-
 [squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8 åŠ ş-
+osquid:UselessImportCheck"?Remove this unused import 'androidx.appcompat.app.AlertDialog'.(¼Ìï¨üÿÿÿÿ8 Åš¢ş-
+tsquid:UselessImportCheck	"DRemove this unused import 'android.graphics.drawable.ColorDrawable'.(ÖŸÂ«øÿÿÿÿ8÷¹ìÙÿ-
+rsquid:UselessImportCheck"BRemove this unused import 'java.util.prefs.PreferenceChangeEvent'.(é“ÿ’øÿÿÿÿ8˜ï‰Ùÿ-
+_squid:UselessImportCheck"/Remove this unused import 'android.app.Dialog'.(·‚Àúÿÿÿÿ8Õ§“Úÿ-
+csquid:UselessImportCheck"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ8÷¹ìÙÿ-
+Ksquid:S1604C"(Make this anonymous inner class a lambda(¢Îñªşÿÿÿÿ8˜äœÚÿ-
+hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.LiveData'.(ß„İŞşÿÿÿÿ8ÄàŸş-
+fsquid:S2259£"BA "NullPointerException" could be thrown; "data" is nullable here.(ã¤Ä‡øÿÿÿÿ8ÁîäÛÿ-
 _squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8ªŒß¤ş-
-csquid:UselessImportCheck!"8Remove this unused import 'java.util.prefs.Preferences'.(àñì8Á÷Àÿ-
-rsquid:UselessImportCheck "BRemove this unused import 'java.util.prefs.PreferenceChangeEvent'.(é“ÿ’øÿÿÿÿ8 ÓÈ¤ş-
+jsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(àÑÆÇ8Ú¹åÛÿ-

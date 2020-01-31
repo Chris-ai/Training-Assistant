@@ -33,6 +33,23 @@ public class AboutActivity extends AppCompatActivity {
 
         trainings_counter = findViewById(R.id.training_counter);
         my_trainings_notes = findViewById(R.id.your_trainings_notes);
+
+        if (getIntent().hasExtra(MyTrainingActivity.SEND_COUNTER) && getIntent().hasExtra(MyTrainingActivity.SEND_LAST_NOTES)) {
+            SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+
+            counter = getIntent().getIntExtra(MyTrainingActivity.SEND_COUNTER, 0);
+            editor.putInt(COUNTER_SAVED, counter);
+            editor.apply();
+            notes = getIntent().getStringExtra(MyTrainingActivity.SEND_LAST_NOTES);
+            editor.putString(NOTE_SAVED, notes);
+            editor.apply();
+
+            trainings_counter.setText(String.valueOf(sharedPreferences.getInt(COUNTER_SAVED, 0)));
+            my_trainings_notes.setText(sharedPreferences.getString(NOTE_SAVED, String.valueOf(R.string.No_notes_detected)));
+        } else {
+            loadData();
+        }
     }
 
     @Override
@@ -60,9 +77,9 @@ public class AboutActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        editor.putInt(COUNTER_SAVED,counter);
+        editor.putInt(COUNTER_SAVED,sharedPreferences.getInt(COUNTER_SAVED,0));
         Log.d("Counter","Dodano licznik do SharedPreferences");
-        editor.putString(NOTE_SAVED,notes);
+        editor.putString(NOTE_SAVED,sharedPreferences.getString(NOTE_SAVED,String.valueOf(R.string.No_notes_detected)));
         Log.d("Notes","Dodano notatki do SharedPreferences");
 
         editor.apply();

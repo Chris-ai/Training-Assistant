@@ -1,10 +1,10 @@
 
-bsquid:UselessImportCheck"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ô—ëı-
-csquid:UselessImportCheck	"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ8¨­Âı-
-qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ8”èƒ¿ı-
-esquid:S1192e"GDefine a constant instead of duplicating this literal "weight" 5 times.(áü¤€8òòôìı-
-[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ô—ëı-
-_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8âÛ¾‡ÿ-
-esquid:S1192m"GDefine a constant instead of duplicating this literal "height" 5 times.(¢‚Ú¬8òòôìı-
-esquid:S1192t"GDefine a constant instead of duplicating this literal "gender" 4 times.(Ô›ï8Æ«õìı-
 fsquid:S1192U"HDefine a constant instead of duplicating this literal "surname" 5 times.(Á¶¨¦8òòôìı-
+esquid:S1192t"GDefine a constant instead of duplicating this literal "gender" 4 times.(Ô›ï8Æ«õìı-
+[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ô—ëı-
+esquid:S1192e"GDefine a constant instead of duplicating this literal "weight" 5 times.(áü¤€8òòôìı-
+esquid:S1192m"GDefine a constant instead of duplicating this literal "height" 5 times.(¢‚Ú¬8òòôìı-
+bsquid:UselessImportCheck"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ô—ëı-
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ù‡¹êüÿÿÿÿ8”èƒ¿ı-
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8âÛ¾‡ÿ-
+csquid:UselessImportCheck	"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ8¨­Âı-
