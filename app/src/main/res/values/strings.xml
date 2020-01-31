@@ -7,7 +7,7 @@
     <string name="training">Mój Trening</string>
     <string name="excercises">Ćwiczenia</string>
     <string name="health">Znajdź siłownie</string>
-    <string name="about">Ustawienia</string>
+    <string name="about">Statystyki</string>
 
     <!-- HEADERS -->
     <string name="top_text">ORGANIZER TRENINGOWY</string>
@@ -37,14 +37,6 @@
     <string name="button_save">Zapisz</string>
 
 
-    <!-- EXCERCISES-->
-    <string name="ABS">Brzuch</string>
-    <string name="back">Plecy</string>
-    <string name="legs">Nogi</string>
-    <string name="shoulders">Barki</string>
-    <string name="chest">Klatka</string>
-    <string name="arms">Ręce</string>
-
 
     <!-- TRAINING LIST ITEM -->
     <string name="excercise_name">Nazwa ćwiczenia</string>
@@ -54,18 +46,39 @@
     <string name="sets">Ćwiczenie</string>
     <string name="reps">Powtórzenia</string>
     <string name="add">Dodaj</string>
+    <string name="series">Serie</string>
+
+    <!-- LOGS -->
+    <string name="SharedPrefsLog" translatable="false">LogiDoSzared</string>
 
 
+    <!-- TOASTS -->
     <string name="addedCorrectly">Ćwiczenie dodane poprawnie.</string>
     <string name="editedCorrectly">Pomyślnie edytowałeś ćwiczenie.</string>
     <string name="changesNotSaved">Nie zapisałeś zmian :/</string>
     <string name="failed">Nie uzupełniłeś wszystkich pól :(</string>
     <string name="deleted_correctly">Pomyślnie usunięto ćwiczenie</string>
-    <string name="YesButton">Tak</string>
-    <string name="DeleteAnyway">Czy na pewno chcesz zakończyć trening? To spowoduje usunięcie wszystkich ćwiczeń</string>
-    <string name="NoButton">Nie</string>
+
+    <!--  ABOUT  -->
     <string name="how_many_trainings">Ilość odbytych treningów:</string>
     <string name="No_notes_detected">Brak notatek</string>
+    <string name="LastNotes">Notatki z ostatniego treningu</string>
+
+
+
+
+
+    <!-- EXCERCISES HEADERS -->
+    <string name="ABS">Brzuch</string>
+    <string name="back">Plecy</string>
+    <string name="legs">Nogi</string>
+    <string name="shoulders">Barki</string>
+    <string name="chest">Klatka</string>
+    <string name="arms">Ręce</string>
+
+
+    <!--  EXCERCISES  -->
+
     <string name="ShouldersOne" translatable="false">Wyciskanie sztangi zza/sprzed głowy</string>
     <string name="ShouldersOneMuscle" translatable="false">Przedni i boczne aktony mięśni naramiennych, mięśnie trójgłowe ramion.</string>
     <string name="ShouldersOneDesc" translatable="false">Stajemy w rozkroku nieco szerszym niż barki - klatka piersiowa wypchnięta ku przodowi, zachowana naturalna krzywizna kręgosłupa-pracują podczas ćwiczenia tylko ramiona i barki staramy się unikać dodatkowych ruchów tułowia i nóg), uchwyt nieco szerszy niż rozstaw barków</string>

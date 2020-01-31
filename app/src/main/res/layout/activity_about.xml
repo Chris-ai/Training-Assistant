@@ -39,7 +39,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/text_excercises"
-                    android:gravity="center"
                     android:text="@string/how_many_trainings"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/padding" />
@@ -50,14 +49,15 @@
                     android:background="@color/ButoonsColor"
                     android:layout_marginTop="@dimen/text_top_size"/>
 
-                <TextView
-                    android:id="@+id/training_counter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_marginTop="@dimen/margin_row"
-                    android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/training_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/TextSize20"
+                        android:textStyle="bold"/>
+
 
             </LinearLayout>
 
@@ -82,10 +82,9 @@
                     android:id="@+id/Notes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/padding"
                     android:layout_marginTop="@dimen/text_excercises"
-                    android:gravity="center"
-                    android:text="@string/comment"
+                    android:layout_gravity="center"
+                    android:text="@string/LastNotes"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/padding" />
 

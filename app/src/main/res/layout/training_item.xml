@@ -15,7 +15,7 @@
 
         <TextView
             android:id="@+id/nameofexcercise_rvitem"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/profile_icon_size"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/small_padding"
             android:hint="@string/excercise_name"/>
@@ -29,23 +29,23 @@
 
         <TextView
             android:id="@+id/how_many_reps_rvitem"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/size"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/small_padding"
-            android:hint="@string/reps"/>
+            android:layout_marginEnd="@dimen/small_padding"/>
 
         <Switch
             android:id="@+id/switch_rv"
-            android:layout_marginStart="@dimen/small_padding"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_padding"
+            android:thumb="@drawable/ic_check_black_24dp"
+            android:track="@drawable/excercise_done" />
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="@dimen/small_padding"
-        android:layout_marginEnd="@dimen/padding"
         android:background="@color/ButoonsColor"/>
 
 </LinearLayout>

@@ -1,4 +1,5 @@
 
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8Ÿ—ÆÀÿ-
+dsquid:UselessImportCheck"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8È®³Àÿ-
 jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(é¤ÈÏüÿÿÿÿ
-Nsquid:S1481!"+Remove this unused "editor" local variable.(ÀÂ©Éÿÿÿÿÿ8—·©³þ-
-isquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(ÆÉÀŠ8Ü˜…³þ-
+]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ð‹G8È®³Àÿ-

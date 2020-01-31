@@ -7,22 +7,38 @@
     android:orientation="vertical"
     tools:context=".MyTrainingActivity">
 
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="#e2e2e2">
 
+        <TextView
+            android:id="@+id/counter_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <Button
             android:id="@+id/end_session"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="280dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@android:color/transparent"
-            android:text="@string/finish_training"/>
+            android:text="@string/finish_training"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -40,12 +56,22 @@
        android:hint="@string/comment" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/floating_button_add_new_series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size"
+        android:background="@drawable/my_button"
+        android:text="@string/add"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/size"
+        android:layout_marginTop="@dimen/padding"
         android:paddingStart="@dimen/padding"
         android:layout_marginBottom="@dimen/small_padding">
 
@@ -79,7 +105,6 @@
 
     </LinearLayout>
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
@@ -88,15 +113,6 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <Button
-        android:id="@+id/floating_button_add_new_series"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="@dimen/size"
-        android:layout_gravity="center"
-        android:background="@drawable/my_button"
-        android:text="@string/add"/>
+
 
 </LinearLayout>

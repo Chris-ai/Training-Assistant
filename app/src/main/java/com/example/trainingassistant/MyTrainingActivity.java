@@ -40,14 +40,10 @@ public class MyTrainingActivity extends AppCompatActivity {
     public static final String USER_TRAININGS_COUNTER = "user_counter";
     public static final String SHARED_PREFS = "sharedPrefs";
 
-    private Dialog epicDialog;
-    TextView message;
-    Button button_cancel;
-    Button button_accept;
-
     TextView notes;
+    TextView counter_tv;
 
-    public int counter = 0;
+    public int counter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,10 +56,8 @@ public class MyTrainingActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         notes = findViewById(R.id.edit_text_training_start);
-
-        epicDialog = new Dialog(this);
-
-
+        counter_tv = findViewById(R.id.counter_id);
+        
         trainingItemViewModel = ViewModelProviders.of(this).get(TrainingItemViewModel.class);
         trainingItemViewModel.findAll().observe(this, new Observer<List<TrainingItem>>() {
             @Override
@@ -88,12 +82,8 @@ public class MyTrainingActivity extends AppCompatActivity {
         button_end.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    showEpicDialog();
-
             }
         });
-
-        saveData(); //Zapisywanie countera oraz notatek do shared pref
     }
 
     private void saveData() {
@@ -124,41 +114,6 @@ public class MyTrainingActivity extends AppCompatActivity {
     }
 
 
-    public void showEpicDialog(){
-
-        epicDialog.setContentView(R.layout.dialog_box);
-        button_accept = epicDialog.findViewById(R.id.button_yes_in_dialogbox);
-        button_cancel = epicDialog.findViewById(R.id.button_no_in_dialogbox);
-        message = epicDialog.findViewById(R.id.message_indb);
-
-        button_cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                epicDialog.dismiss();
-            }
-        });
-
-        button_accept.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                counter++;
-                saveData();
-                loadData();
-                Intent MyIntent = new Intent(MyTrainingActivity.this, AboutActivity.class);
-                MyIntent.putExtra(AboutActivity.COUNTER_KEY,getSharedCounter());
-                MyIntent.putExtra(AboutActivity.NEW_TRAINING_NOTE, getSharedNotes());
-                startActivity(MyIntent);
-
-                trainingItemViewModel.deleteAll();
-                finish();
-            }
-        });
-
-        epicDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        epicDialog.show();
-    }
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -167,7 +122,17 @@ public class MyTrainingActivity extends AppCompatActivity {
             assert data != null;
             TrainingItem item = new TrainingItem(data.getStringExtra(AddNewSeries.EXTRA_EDIT_TRAINING_NAME)
             ,data.getStringExtra(AddNewSeries.EXTRA_EDIT_TRAINING_LOAD), data.getStringExtra(AddNewSeries.EXTRA_EDIT_TRAINING_REPS));
-            trainingItemViewModel.insert(item);
+
+            String series = data.getStringExtra(AddNewSeries.EXTRA_EDIT_SERIES);
+            int check;
+            if(series == null){
+                check = 1;
+            } else { check = Integer.parseInt(series);
+            }
+             for(int i=0;i<check;i++) {
+                 trainingItemViewModel.insert(item);
+             }
+
             Toast.makeText(this, R.string.addedCorrectly,Toast.LENGTH_LONG).show();
         } else if(requestCode == EDIT_ITEM_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK){
             TrainingItem editedItem = trainingItemViewModel.findAll().getValue().get(data.getIntExtra(AddNewSeries.EXTRA_EDIT_TRAINING_POSITION,0));
@@ -203,9 +168,9 @@ public class MyTrainingActivity extends AppCompatActivity {
             trainingLoad.setOnClickListener(this::onClick);
             trainingReps.setOnClickListener(this::onClick);
 
-            trainingName.setOnClickListener(this::onLongClick);
-            trainingLoad.setOnClickListener(this::onLongClick);
-            trainingReps.setOnClickListener(this::onLongClick);
+            trainingName.setOnLongClickListener(this::onLongClick);
+            trainingLoad.setOnLongClickListener(this::onLongClick);
+            trainingReps.setOnLongClickListener(this::onLongClick);
         }
 
         public void bind(TrainingItem item, int position){

@@ -311,7 +311,7 @@
                                     android:id="@+id/ImageAbout"
                                     android:layout_width="@dimen/size"
                                     android:layout_height="@dimen/size"
-                                    android:src="@drawable/about"
+                                    android:src="@drawable/icons8_decrease_100"
                                     android:layout_centerInParent="true"/>
 
                                 <TextView
