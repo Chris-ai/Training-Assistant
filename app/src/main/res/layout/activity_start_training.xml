@@ -41,6 +41,7 @@
    <EditText
        android:id="@+id/edit_text_training_start"
        android:layout_width="match_parent"
+       android:inputType="textCapWords"
        android:layout_height="match_parent"
        android:hint="@string/comment" />
     </com.google.android.material.textfield.TextInputLayout>

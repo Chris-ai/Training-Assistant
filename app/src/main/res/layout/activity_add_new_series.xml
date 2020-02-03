@@ -26,6 +26,7 @@
             android:id="@+id/nameofexcercise"
             android:layout_width="@dimen/lindear_under_background"
             android:layout_height="match_parent"
+            android:inputType="textCapWords"
             android:layout_gravity="center"
             android:hint="@string/excercise_name" />
 

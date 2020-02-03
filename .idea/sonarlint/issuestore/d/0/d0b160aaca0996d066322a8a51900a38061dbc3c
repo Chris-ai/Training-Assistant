@@ -1,13 +1,14 @@
 
-_squid:UselessImportCheck"/Remove this unused import 'android.app.Dialog'.(·‚Àžúÿÿÿÿ8Õ§“Úÿ-
-fsquid:S2259¤"BA "NullPointerException" could be thrown; "data" is nullable here.(ã¤Ä‡øÿÿÿÿ8ÁîäÛÿ-
-rsquid:UselessImportCheck"BRemove this unused import 'java.util.prefs.PreferenceChangeEvent'.(é“ÿ’øÿÿÿÿ8˜ï‰Ùÿ-
-[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8 åŠ þ-
+fsquid:S2259­"BA "NullPointerException" could be thrown; "data" is nullable here.(ã¤Ä‡øÿÿÿÿ8ÍçÌÕ€.
 _squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8ªŒß¤þ-
-osquid:UselessImportCheck"?Remove this unused import 'androidx.appcompat.app.AlertDialog'.(¼Ìï¨üÿÿÿÿ8 Åš¢þ-
-Ksquid:S1604C"(Make this anonymous inner class a lambda(¢Îñªþÿÿÿÿ8˜äœÚÿ-
-lsquid:MaximumInheritanceDepth""<This class has 6 parents which is greater than 5 authorized.(§„š8˜ï‰Ùÿ-
+Ksquid:S1604E"(Make this anonymous inner class a lambda(¢Îñªþÿÿÿÿ8˜äœÚÿ-
+csquid:UselessImportCheck""8Remove this unused import 'java.util.prefs.Preferences'.(Žàñì8«ŸœÖ€.
+asquid:S1126ò"BReplace this if-then-else statement by a single method invocation.(‹·‘Ä8ÍçÌÕ€.
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8 åŠ þ-
+rsquid:UselessImportCheck!"BRemove this unused import 'java.util.prefs.PreferenceChangeEvent'.(é“ÿ’øÿÿÿÿ8˜ï‰Ùÿ-
 csquid:UselessImportCheck"3Remove this unused import 'android.graphics.Color'.(øãíòþÿÿÿÿ8÷¹ìÙÿ-
+_squid:UselessImportCheck"/Remove this unused import 'android.app.Dialog'.(·‚Àžúÿÿÿÿ8Õ§“Úÿ-
+hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.LiveData'.(ß„ÝÞþÿÿÿÿ8ÄàŸþ-
 tsquid:UselessImportCheck	"DRemove this unused import 'android.graphics.drawable.ColorDrawable'.(ÖŸÂ«øÿÿÿÿ8÷¹ìÙÿ-
-jsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(àÑÆÇ8Ú¹åÛÿ-
-hsquid:UselessImportCheck"8Remove this unused import 'androidx.lifecycle.LiveData'.(ß„ÝÞþÿÿÿÿ8ÄàŸþ-
+lsquid:MaximumInheritanceDepth$"<This class has 6 parents which is greater than 5 authorized.(§„š8˜ï‰Ùÿ-
+osquid:UselessImportCheck"?Remove this unused import 'androidx.appcompat.app.AlertDialog'.(¼Ìï¨üÿÿÿÿ8 Åš¢þ-

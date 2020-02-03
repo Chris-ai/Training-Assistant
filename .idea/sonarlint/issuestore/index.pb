@@ -37,3 +37,5 @@ t
 Dapp/src/main/java/com/example/trainingassistant/TrainingItemDao.java,3\1\3136e6d9b59af3bfaae3d4748fbf9873907542de
 u
 Eapp/src/main/java/com/example/trainingassistant/CreatorsActivity.java,d\e\de0619f8cc3f72adb05930fcca298257285246b3
+k
+;app/src/main/java/com/example/trainingassistant/Dialog.java,b\6\b6f61300b9f412d865342bf02608f341d317f8cb
