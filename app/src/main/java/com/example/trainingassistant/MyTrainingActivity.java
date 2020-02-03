@@ -9,10 +9,12 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -93,6 +95,9 @@ public class MyTrainingActivity extends AppCompatActivity {
                 myIntent.putExtra(SEND_COUNTER,getSharedCounter());
                 myIntent.putExtra(SEND_LAST_NOTES,getSharedNotes());
                 startActivity(myIntent);
+                trainingItemViewModel.deleteAll();
+                notes.setText("");
+                saveData();
                 finish();
             }
         });
@@ -125,7 +130,7 @@ public class MyTrainingActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
 
         counter = sharedPreferences.getInt(USER_TRAININGS_COUNTER,0);
-       // notes.setText(sharedPreferences.getString(USER_TRAININGS_NOTES, "Brak notatek"));
+        notes.setText(sharedPreferences.getString(USER_TRAININGS_NOTES, "Brak notatek"));
     }
 
     private int getSharedCounter(){
@@ -143,6 +148,9 @@ public class MyTrainingActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
         if(requestCode == NEW_ITEM_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK){
             assert data != null;
             TrainingItem item = new TrainingItem(data.getStringExtra(AddNewSeries.EXTRA_EDIT_TRAINING_NAME)
@@ -156,6 +164,8 @@ public class MyTrainingActivity extends AppCompatActivity {
             }
              for(int i=0;i<check;i++) {
                  trainingItemViewModel.insert(item);
+                 editor.putBoolean(String.valueOf(item.getId()),false);
+                 editor.apply();
              }
 
             Toast.makeText(this, R.string.addedCorrectly,Toast.LENGTH_LONG).show();
@@ -175,11 +185,16 @@ public class MyTrainingActivity extends AppCompatActivity {
     }
 
     private class TrainingHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
         private TrainingItem trainingItem;
         private int position;
         private TextView trainingName;
         private TextView trainingLoad;
         private TextView trainingReps;
+        private Switch aSwitch;
+        SparseBooleanArray itemStateArray= new SparseBooleanArray();
 
 
         public TrainingHolder(LayoutInflater inflater, ViewGroup parent){
@@ -188,22 +203,47 @@ public class MyTrainingActivity extends AppCompatActivity {
             trainingName = itemView.findViewById(R.id.nameofexcercise_rvitem);
             trainingLoad = itemView.findViewById(R.id.how_many_kg_rvitem);
             trainingReps = itemView.findViewById(R.id.how_many_reps_rvitem);
+            aSwitch = itemView.findViewById(R.id.switch_rv);
 
-            trainingName.setOnClickListener(this::onClick);
-            trainingLoad.setOnClickListener(this::onClick);
-            trainingReps.setOnClickListener(this::onClick);
+            aSwitch.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int adapterPosition = getAdapterPosition();
+                    if (!sharedPreferences.getBoolean(String.valueOf(adapterPosition), false)) {
+                        aSwitch.setChecked(true);
+                        editor.putBoolean(String.valueOf(adapterPosition), true);
+                        editor.apply();
+                    }
+                    else  {
+                        aSwitch.setChecked(false);
+                        editor.putBoolean(String.valueOf(adapterPosition), false);
+                        editor.apply();
+                    }
+                }
+            });
 
-            trainingName.setOnLongClickListener(this::onLongClick);
-            trainingLoad.setOnLongClickListener(this::onLongClick);
-            trainingReps.setOnLongClickListener(this::onLongClick);
+            trainingName.setOnClickListener(this);
+            trainingLoad.setOnClickListener(this);
+            trainingReps.setOnClickListener(this);
+
+            trainingName.setOnLongClickListener(this);
+            trainingLoad.setOnLongClickListener(this);
+            trainingReps.setOnLongClickListener(this);
         }
 
         public void bind(TrainingItem item, int position){
             this.trainingItem = item;
             this.position = position;
+
             trainingName.setText(trainingItem.getName());
             trainingLoad.setText(trainingItem.getLoad());
             trainingReps.setText(trainingItem.getReps());
+
+            if (!sharedPreferences.getBoolean(String.valueOf(position),false)){
+                aSwitch.setChecked(false);}
+            else {
+                aSwitch.setChecked(true);
+            }
         }
 
 

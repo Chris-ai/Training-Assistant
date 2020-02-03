@@ -65,8 +65,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="@color/custom_cardview_background"
-                            app:cardCornerRadius="@dimen/corner">
+                            app:cardBackgroundColor="@color/custom_cardview_background">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -102,50 +101,7 @@
 
                         </androidx.cardview.widget.CardView>
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="@color/custom_cardview_background"
-                            app:cardCornerRadius="@dimen/corner">
 
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                                <ImageView
-                                    android:id="@+id/imageCalendar"
-                                    android:layout_width="@dimen/size"
-                                    android:layout_height="@dimen/size"
-                                    android:src="@drawable/calendar"
-                                    android:layout_centerInParent="true"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/calendar"
-                                    android:textSize="@dimen/image_text_size"
-                                    android:layout_below="@id/imageCalendar"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="@dimen/margin_row"
-                                    android:layout_marginBottom="@dimen/margin_row"
-                                    android:textStyle="bold"
-                                    />
-
-                                <Button
-                                    android:id="@+id/CalendarButton"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:background="@android:color/transparent"
-                                    />
-
-
-                            </RelativeLayout>
-
-                        </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
                     <!-- Row 2 -->
@@ -163,7 +119,7 @@
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
                             app:cardBackgroundColor="@color/custom_cardview_background"
-                            app:cardCornerRadius="@dimen/corner">
+                           >
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -205,8 +161,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="@color/custom_cardview_background"
-                            app:cardCornerRadius="@dimen/corner">
+                            app:cardBackgroundColor="@color/custom_cardview_background">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -257,8 +212,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="@color/custom_cardview_background"
-                            app:cardCornerRadius="@dimen/corner">
+                            app:cardBackgroundColor="@color/custom_cardview_background">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -268,7 +222,7 @@
                                     android:id="@+id/googleMaps"
                                     android:layout_width="@dimen/size"
                                     android:layout_height="@dimen/size"
-                                    android:src="@drawable/maps"
+                                    android:src="@drawable/creators"
                                     android:layout_centerInParent="true"/>
 
                                 <TextView
@@ -293,6 +247,7 @@
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -300,8 +255,7 @@
                             android:gravity="center"
                             android:orientation="vertical"
                             android:layout_marginEnd="@dimen/margin_beetween"
-                            app:cardBackgroundColor="@color/custom_cardview_background"
-                            app:cardCornerRadius="@dimen/corner">
+                            app:cardBackgroundColor="@color/custom_cardview_background">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -336,7 +290,6 @@
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
-
                     </LinearLayout>
 
                 </LinearLayout>

@@ -5,6 +5,6 @@
     <color name="textColor">@android:color/black</color>
     <color name="floating_button">#424952</color>
     <color name="custom_cardview_background">#ffffff</color>
-    <color name="background">#eceff1</color>
+    <color name="background">#f5f5f5</color>
     <color name="Notes_color">#fff59d</color>
 </resources>

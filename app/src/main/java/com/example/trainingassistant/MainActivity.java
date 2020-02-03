@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         Button button_mytraining = findViewById(R.id.TrainingButton);
         Button button_cardio = findViewById(R.id.HealthButton);
         Button button_about = findViewById(R.id.AboutButton);
-        Button button_calendar = findViewById(R.id.CalendarButton);
 
         button_profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         button_cardio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, FindYourGym.class);
+                Intent intent = new Intent(MainActivity.this, CreatorsActivity.class);
                 MainActivity.this.startActivity(intent);
             }
         });
@@ -65,13 +64,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button_calendar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
-                MainActivity.this.startActivity(intent);
-            }
-        });
     }
 
 

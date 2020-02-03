@@ -19,10 +19,6 @@ t
 Dapp/src/main/java/com/example/trainingassistant/SpinnerListItem.java,4\b\4bfe17f44b2bb68e1c2e610a6e65763f49df97a7
 s
 Capp/src/main/java/com/example/trainingassistant/SpinnerAdapter.java,f\4\f49db35fb0296db38182463f219f32872a34f7ff
-p
-@app/src/main/java/com/example/trainingassistant/FindYourGym.java,f\7\f7fd514b1bcc4883c0e0607c7f5c079c690b104a
-u
-Eapp/src/main/java/com/example/trainingassistant/CalendarActivity.java,f\8\f83443796afacae612a115b6403c552f064ef103
 s
 Capp/src/main/java/com/example/trainingassistant/AddNewTraining.java,f\3\f33ddc4a7794794b4e4fd6ec15f87232a01cb34a
 {
@@ -39,3 +35,5 @@ q
 Aapp/src/main/java/com/example/trainingassistant/TrainingItem.java,9\4\94a8636ba1160635185a80dc2421046f18577cf0
 t
 Dapp/src/main/java/com/example/trainingassistant/TrainingItemDao.java,3\1\3136e6d9b59af3bfaae3d4748fbf9873907542de
+u
+Eapp/src/main/java/com/example/trainingassistant/CreatorsActivity.java,d\e\de0619f8cc3f72adb05930fcca298257285246b3

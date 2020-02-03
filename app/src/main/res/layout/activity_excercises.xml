@@ -255,7 +255,7 @@
                                 android:id="@+id/abs_spinner"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:gravity="top"></Spinner>
+                                android:gravity="top" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView> <!-- Abs -->
@@ -302,7 +302,7 @@
                                 android:id="@+id/legs_spinner"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:gravity="top"></Spinner>
+                                android:gravity="top" />
 
                         </RelativeLayout>
 
@@ -313,10 +313,16 @@
 
             </RelativeLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/padding"
+                android:layout_marginEnd="@dimen/padding"
+                android:textStyle="italic"
+                android:text="@string/warning"/>
+
         </LinearLayout>
-
-
-
 
     </ScrollView>
 

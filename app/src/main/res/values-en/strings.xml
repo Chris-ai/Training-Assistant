@@ -15,7 +15,7 @@
     <string name="kgs">Load</string>
     <string name="how_many_trainings">Number of your trainings</string>
     <string name="height">Height(cm):</string>
-    <string name="health">Find your gym</string>
+    <string name="health">Creators</string>
     <string name="finish_training">Finish</string>
     <string name="Female">Women</string>
     <string name="failed">There\'s empty fields :(</string>
@@ -45,4 +45,5 @@
     <string name="No_notes_detected">No notes</string>
     <string name="series">Series</string>
     <string name="LastNotes">Last Notes</string>
+    <string name="warning">This application is only a organizer. If you have any doubts about technics, ask your trainer.</string>
 </resources>

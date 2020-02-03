@@ -3,10 +3,9 @@
 
     <!-- MAIN -->
     <string name="profile">Profil</string>
-    <string name="calendar">Kalendarz</string>
     <string name="training">Mój Trening</string>
     <string name="excercises">Ćwiczenia</string>
-    <string name="health">Znajdź siłownie</string>
+    <string name="health">Twórcy</string>
     <string name="about">Statystyki</string>
 
     <!-- HEADERS -->
@@ -148,5 +147,6 @@
     <string name="LegsFouur" translatable="false">Wyciskanie nogami na maszynie</string>
     <string name="LegsFourMuscle" translatable="false">głowy boczne, pośrednie i przyśrodkowe mięśni czworogłowych ud.</string>
     <string name="LegsFourDesc" translatable="false">Wyciskanie nóg na maszynie. Nie jest to zbyt skomplikowane. Należy jedynie unikać aby nie prostować nóg do końca.</string>
+    <string name="warning">Aplikacja jest jedynie organizerem treningowym. Jeżeli masz jakieś wątpliwości co do wykonywania ćwiczenia spytaj odpowiednio wykwalifikowanej osoby.</string>
 
 </resources>
