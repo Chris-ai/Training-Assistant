@@ -52,9 +52,9 @@
 
 
             <ImageView
+                android:id="@+id/profile_image"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/profile_header"
                 android:layout_gravity="center"/>
             <LinearLayout
                 android:layout_width="wrap_content"

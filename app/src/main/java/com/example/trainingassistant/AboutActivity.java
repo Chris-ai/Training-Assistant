@@ -46,7 +46,7 @@ public class AboutActivity extends AppCompatActivity {
             editor.apply();
 
             trainings_counter.setText(String.valueOf(sharedPreferences.getInt(COUNTER_SAVED, 0)));
-            my_trainings_notes.setText(sharedPreferences.getString(NOTE_SAVED, String.valueOf(R.string.No_notes_detected)));
+            my_trainings_notes.setText(sharedPreferences.getString(NOTE_SAVED, ""));
         } else {
             loadData();
         }
@@ -68,7 +68,7 @@ public class AboutActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
 
         trainings_counter.setText(String.valueOf(sharedPreferences.getInt(COUNTER_SAVED,0)));
-        my_trainings_notes.setText(sharedPreferences.getString(NOTE_SAVED,String.valueOf(R.string.No_notes_detected)));
+        my_trainings_notes.setText(sharedPreferences.getString(NOTE_SAVED,""));
         Log.d("Dane","Załadowano odbyte treningi");
     }
 
@@ -79,7 +79,7 @@ public class AboutActivity extends AppCompatActivity {
 
         editor.putInt(COUNTER_SAVED,sharedPreferences.getInt(COUNTER_SAVED,0));
         Log.d("Counter","Dodano licznik do SharedPreferences");
-        editor.putString(NOTE_SAVED,sharedPreferences.getString(NOTE_SAVED,String.valueOf(R.string.No_notes_detected)));
+        editor.putString(NOTE_SAVED,sharedPreferences.getString(NOTE_SAVED,""));
         Log.d("Notes","Dodano notatki do SharedPreferences");
 
         editor.apply();

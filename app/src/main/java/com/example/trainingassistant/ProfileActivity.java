@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +40,7 @@ public class ProfileActivity extends AppCompatActivity {
     private int weight;
     private int height;
 
-
+    private ImageView profile_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,15 +54,16 @@ public class ProfileActivity extends AppCompatActivity {
         textViewWeight = findViewById(R.id.how_many_kg);
         textViewGender = findViewById(R.id.gender);
         textViewSurname = findViewById(R.id.surname);
+        profile_image = findViewById(R.id.profile_image);
+
 
         edit_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ProfileActivity.this, EditProfileActivity.class);
-                startActivityForResult(intent,EDIT_PROFILE_REQUEST_CODE);
+                startActivityForResult(intent, EDIT_PROFILE_REQUEST_CODE);
             }
         });
-
     }
 
     @Override
@@ -136,6 +138,13 @@ public class ProfileActivity extends AppCompatActivity {
         textViewHeight.setText(String.valueOf(sharedPreferences.getInt("height",0)));
         textViewGender.setText(sharedPreferences.getString("gender","none"));
         Log.d("Tag","Wczytano dane");
+
+        if(sharedPreferences.getString("gender","none").equals("Mężczyzna")){
+            profile_image.setImageResource(R.drawable.boy);
+        } else if(sharedPreferences.getString("gender","none").equals("Kobieta")){
+            profile_image.setImageResource(R.drawable.girl);
+        }
+
     }
 
     private void saveData(){

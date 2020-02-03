@@ -130,7 +130,7 @@ public class MyTrainingActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
 
         counter = sharedPreferences.getInt(USER_TRAININGS_COUNTER,0);
-        notes.setText(sharedPreferences.getString(USER_TRAININGS_NOTES, "Brak notatek"));
+        notes.setText(sharedPreferences.getString(USER_TRAININGS_NOTES, ""));
     }
 
     private int getSharedCounter(){

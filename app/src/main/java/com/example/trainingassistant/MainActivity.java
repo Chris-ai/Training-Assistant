@@ -51,8 +51,9 @@ public class MainActivity extends AppCompatActivity {
         button_cardio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CreatorsActivity.class);
-                MainActivity.this.startActivity(intent);
+                /*Intent intent = new Intent(MainActivity.this, CreatorsActivity.class);
+                MainActivity.this.startActivity(intent);*/
+                openDialog();
             }
         });
 
@@ -64,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void openDialog() {
+        Dialog exampleDialog = new Dialog();
+        exampleDialog.show(getSupportFragmentManager(), "dialog");
     }
 
 

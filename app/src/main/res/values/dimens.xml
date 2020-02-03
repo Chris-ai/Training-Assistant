@@ -19,6 +19,5 @@
     <dimen name="TextSize20">20sp</dimen>
     <dimen name="LineRow">1dp</dimen>
     <dimen name="switchbigsomething">24dp</dimen>
-    <dimen name="switch_padding">2dp</dimen>
     <dimen name="switchHeight">28dp</dimen>
 </resources>
