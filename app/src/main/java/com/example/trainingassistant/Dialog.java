@@ -15,10 +15,9 @@ public class Dialog extends AppCompatDialogFragment {
     @Override
     public android.app.Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("BroFistStudio")
-                .setMessage("Jesteśmy zespołem początkujących programistów, chcących podzielić się rezultatami swojej pracy.\n" +
-                        "Dziękujemy za pobranie naszej aplikacji!\n" +
-                        "Ikony użyte w aplikacji zostały pobrane ze stron:\nicons8.com\nFlaticon.com")
+        builder.setTitle("Krzysztof Kondracikowski")
+                .setMessage("Jestem studetem Politechniki Białostockiej, aplikacja została wykonana na projekt z przedmiotu: Systemy mobilne." +
+                        "\nIkony użyte w aplikacji zostały pobrane ze stron:\nicons8.com\nFlaticon.com")
                 .setPositiveButton("Zamknij", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
